@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>xwMOOC: </title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-59802572-9', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://xwmooc.net" title="xwMOOC">
+          <img alt="xwMOOC banner" src="img/xwMOOC.png" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1 class="title"></h1>
+          
+<h1 id="lesson-layout">Lesson Layout</h1>
+<p>Each lesson is stored in a directory laid out as described below. That directory is a self-contained Git repository (i.e., there are no submodules or clever tricks with symbolic links).</p>
+<ol style="list-style-type: decimal">
+<li><p><code>README.md</code>: initially a copy of this repository’s README file. It should be overwritten with short description of the lesson, but should include the following blockquote to help people find these instructions:</p>
+<pre><code>&gt; Please see [https://github.com/swcarpentry/lesson-example][swc-lesson-example]
+&gt; for instructions on formatting, building, and submitting lessons,
+&gt; or run `make` in this directory for a list of helpful commands.</code></pre></li>
+<li><p>Other files in the root directory: the source of the lesson’s web pages (and possibly auxiliary files like IPython Notebooks and R Markdown files).</p></li>
+<li><p><code>code/</code>, <code>data/</code>, and <code>fig/</code>: sub-directories containing sample code, data files, and figures. See “Code, Data, and Figures” below.</p></li>
+<li><p><code>css/</code>, <code>img/</code>, <code>js/</code>, and <code>deck.js/</code>: style sheets, artwork, and Javascript used in the lesson’s web site. See “Support Files” below.</p></li>
+<li><p><code>_layouts/</code> and <code>_includes/</code>: page templates and inclusions. See “Support Files” below.</p></li>
+<li><p><code>tools/</code>: tools for managing lessons. See “Tools” below.</p></li>
+</ol>
+<h1 id="code-data-and-figures">Code, Data, and Figures</h1>
+<p>All of the software samples used in the lesson must go in a directory called <code>code/</code>. Stand-alone data files must go in a directory called <code>data/</code>. Groups of related data files must be put together in a sub-directory of <code>data/</code> with a meaningful (short) name. Figures, plots, and diagrams used in the lessons must go in a <code>fig/</code> directory.</p>
+<p><strong>Notes:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>This mirrors the layout a scientist would use for actual work. However, it may cause novice learners problems. If a program is in <code>code/a.py</code>, and contains a reference to a data file <code>../data/b.csv</code>, then if the user runs the program from the root directory using <code>python code/a.py</code>, it will be unable to find the data file (since the program’s working directory will be the root directory, not the <code>data</code> directory).</p></li>
+<li><p>IPython Notebooks and R Markdown files, which are both code and the source for web pages, should go in the root directory. These will not be checked by our validation tool, or indexed by other tools we plan to build.</p></li>
+<li><p>We strongly prefer SVG for line drawings, since they are smaller, scale better, and are easier to edit. Screenshots and other raster images must be PNG or JPEG format.</p></li>
+</ol>
+<h1 id="support-files">Support Files</h1>
+<p>Files used to display the lesson, such as artwork, CSS, and Javascript, are stored in <code>img/</code>, <code>css/</code>, and <code>js/</code> directories of their own. We keep website artwork in the <code>img/</code> directory separate from figures used in the lesson (which are stored in <code>fig/</code>) to make it simple to update the former automatically. Most authors should not need to modify any of the support files themselves.</p>
+<p>The <code>_layouts/</code> directory holds the page templates used to translate Markdown to HTML, while the <code>_includes/</code> directory holds snippets of HTML that are used in several page layouts. These directories have underscores at the start of their names to be consistent with Jekyll’s naming conventions, but the files they contain are for Pandoc.</p>
+<h1 id="tools">Tools</h1>
+<p>The <code>tools/</code> directory contains tools to help create and maintain lessons:</p>
+<ul>
+<li><code>tools/check</code>: make sure that everything is formatted properly, and print error messages identifying problems if it’s not.</li>
+</ul>
+<h1 id="pages">Pages</h1>
+<p>The root directory holds the content of the lesson, and must contain:</p>
+<ol style="list-style-type: decimal">
+<li><p><code>Makefile</code>: contains commands to check, preview, and update the repository. Authors should not need to modify this file.</p></li>
+<li><p><code>index.md</code>: the home page for the lesson. (See “Home Page” below.)</p></li>
+<li><p><code>dd-slug.md</code>: the topics in the lesson. <code>dd</code> is a sequence number such as <code>01</code>, <code>02</code>, etc., and <code>slug</code> is an abbreviated single-word mnemonic for the topic. Thus, <code>03-filesys.md</code> is the third topic in this lesson, and is about the filesystem. (Note that we use hyphens rather than underscores in filenames.) See “Topics” below.</p></li>
+<li><p><code>reference.md</code>: a cheat sheet summarizing key terms and commands, syntax, etc., that can be printed and given to learners. See “Reference Guide” below.</p></li>
+<li><p><code>discussion.md</code>: notes about more advanced ideas that would distract from the main lesson, and pointers to where to go next. See “Discussion Page” below.</p></li>
+<li><p><code>instructors.md</code>: the instructor’s guide for the lesson. See “Instructor’s Guide” below.</p></li>
+<li><p><code>CONTRIBUTING.md</code>: instructions for people who want to contribute. This file should be edited to replace references to <code>lesson-template</code> with references to your lesson’s repository.</p></li>
+</ol>
+<p>Note: the lesson’s title is repeated in several files. We could put this in the Makefile, and insert it into pages when compiling, but then authors would have to edit the Makefile (which we want to avoid). We could also put it in some sort of configuration file, but they’re not a standard part of Pandoc, so we’re avoiding them as well.</p>
+<h2 id="home-page">Home Page</h2>
+<p><code>index.md</code> must be structured as follows:</p>
+<pre><code>---
+layout: lesson
+title: Lesson Title
+---
+Paragraph(s) of introductory material.
+
+&gt; ## Prerequisites {.prereq}
+&gt;
+&gt; What learners need to know before tackling this lesson.
+
+## Topics
+
+1.  [Topic Title 1](01-slug.html)
+2.  [Topic Title 2](02-slug.html)
+
+## Other Resources
+
+*   [Reference](reference.html)
+*   [Discussion](discussion.html)
+*   [Instructor&#39;s Guide](instructors.html)</code></pre>
+<p><strong>Notes:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>The description of prerequisites is prose for human consumption, not a machine-comprehensible list of dependencies. We may supplement the former with the latter once we have more experience with this lesson format and know what we actually want to do.</p></li>
+<li><p>Software installation and configuration instructions <em>aren’t</em> in the lesson, since they may be shared with other lessons. They will be stored centrally on the Software Carpentry web site and linked from the lessons that need them.</p></li>
+</ol>
+<h2 id="topics">Topics</h2>
+<p>Each topic page must be structured as follows:</p>
+<pre><code>---
+layout: page
+title: Lesson Title
+subtitle: Topic Title
+minutes: 10
+---
+&gt; ## Learning Objectives {.objectives}
+&gt;
+&gt; * Learning objective 1
+&gt; * Learning objective 2
+
+Paragraphs of text
+--- possibly including [definitions](reference.html#definitions) ---
+mixed with:
+
+~~~ {.python}
+some code:
+    to be displayed
+~~~
+
+and:
+
+~~~ {.output}
+output
+from
+program
+~~~
+
+and:
+
+~~~ {.error}
+error reports from programs (if any)
+~~~
+
+and possibly including some of these:
+
+&gt; ## Callout Box {.callout}
+&gt;
+&gt; An aside of some kind.
+
+and one or more of these at the end:
+
+&gt; ## Challenge Title {.challenge}
+&gt;
+&gt; Description of a single challenge,
+&gt; separated from the title by a blank line.
+&gt; There may be several challenges;
+&gt; they should all come at the end of the file,
+&gt; and each should have a short, meaningful title.</code></pre>
+<p><strong>Notes:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>The “expected time” heading is called minutes to encourage people to create topics that are short (10-15 minutes at most).</p></li>
+<li><p>There are no sub-headings inside a topic other than the ones shown. (If a topic needs sub-headings, it should be broken into two or more topics.)</p></li>
+<li><p>Every challenge should relate back to a learning objective. It should have a brief title and the class <code>challenge</code>.</p></li>
+<li><p>Definitions are links with fragment identifier to <code>reference.html</code> (like <code>[definitions](reference.html#definitions)</code>). This is need to enable links from name diferent from the key word defined.</p></li>
+<li><p>When laying out source code, use <code>{.lang}</code> as a style on the opening <code>~~~</code> line. For Unix Shell commands use:</p>
+<pre><code>~~~ {.bash}
+$ some-command
+~~~</code></pre>
+<p>For MATLAB use:</p>
+<pre><code>~~~ {.matlab}
+some code
+~~~</code></pre>
+<p>For R use:</p>
+<pre><code>~~~ {.r}
+some code
+~~~</code></pre>
+<p>For Python use:</p>
+<pre><code>~~~ {.python}
+some code
+~~~</code></pre>
+<p>For SQL use:</p>
+<pre><code>~~~ {.sql}
+some code
+~~~</code></pre></li>
+</ol>
+<h2 id="writing-lessons-with-r-markdown">Writing Lessons with R Markdown</h2>
+<p>Lessons can be written in R Markdown and converted to Markdown. The main advantages of maintaining lessons in an executable format is 1) not having to copy-paste the output and 2) it is easier to test if new changes break code in other parts of the lesson. The main disadvantage is that there will be more noise when merging the generated content (e.g. different R versions have slightly different wording of error messages).</p>
+<p>After writing or editing a lesson written in R Markdown, automatically generate the Markdown and html versions by running the command <code>make preview</code>. This first runs the <code>knit</code> command from the <a href="http://yihui.name/knitr/">knitr</a> package to convert to Markdown, and then pandoc to convert to html.</p>
+<p>To ensure that the generated Markdown files follow the lesson template guidelines, <code>source</code> the R file <a href="tools/chunk-options.R">tools/chunk-options.R</a>. This file contains settings that format the input and output code chunks, send all generated figures to <code>fig/</code> instead of <code>figure/</code>, and specify a few other knitr options. Thus a lesson should look like the following:</p>
+<pre><code>---
+layout: page
+title: Lesson Title
+subtitle: Topic Title
+minutes: 10
+---
+
+```{r, include=FALSE}
+source(&quot;tools/chunk-options.R&quot;)
+opts_chunk$set(fig.path = &quot;fig/topic-title-&quot;)
+```
+
+&gt; ## Learning Objectives {.objectives}
+&gt;
+&gt; * Learning objective 1
+&gt; * Learning objective 2
+
+Paragraphs of text
+--- possibly including [definitions](reference.html#definitions) ---
+mixed with:
+
+```{r chunk-name}
+# code to be exectued
+```
+
+More text.</code></pre>
+<p>When using <a href="tools/chunk-options.R">tools/chunk-options.R</a>, figures are automatically sent to <code>fig/</code>. However it is easier to manage all the figures in a lesson if their names are more descriptive. This can be acheived by setting a more informative <code>fig.path</code> like the example above, which will prepend “topic-title-” to all generated figure names. Furthermore, it is recommended to name the code chunks. Thus if a plot was generated in the example code chunk above, it would be saved as <code>fig/topic-title-chunk-name.png</code>.</p>
+<p>To avoid unecessary merge conflicts in the generated content, do not randomly generate data. Instead use <code>set.seed</code> so that any randomly generated data is always consistent. If introducing the concept of random number generation is outside the scope of the lesson, <code>set.seed</code> can be hidden from the learners in a separate code chunk.</p>
+<pre><code>```{r set-seed, echo=FALSE}
+set.seed(12345)
+```
+
+```{r normal-distribution}
+ex_dat &lt;- rnorm(100)
+summary(ex_dat)
+```</code></pre>
+<h2 id="reference-guide">Reference Guide</h2>
+<p>The reference guide in <code>reference.md</code> is a cheat sheet for learners to print, doodle on, and take away. Its format is deliberately unconstrained for now, since we’ll need to see a few before we can decide how they ought to be laid out (or whether they need to be laid out the same way at all).</p>
+<p>The last section of the reference guide must be a glossary laid out as a definition list:</p>
+<pre><code>---
+layout: page
+title: Lesson Title
+subtitle: Reference
+---
+...commands and examples...
+
+## Glossary
+
+key word 1
+:   Definition of first term
+
+key word 2
+:   Definition of second term</code></pre>
+<h2 id="discussion-page">Discussion Page</h2>
+<p>The discussion page in <code>discussion.md</code> is meant to contain links to further reading, supplementary material that classes usually won’t get to, and so on. Sections must use level-2 headings, but the content is otherwise unconstrained:</p>
+<pre><code>---
+layout: page
+title: Lesson Title
+subtitle: Discussion
+---
+## Something That May Be Useful
+
+Paragraphs of general discussion
+
+## Something Else
+
+More general discussion, with links.</code></pre>
+<p>Note: the discussion page is not lesson material, so it should not contain challenges and the like. Its format is deliberately vague for now: once we have more experience with our lesson template, we will provide more guidance on how to lay out this file. Until then, please do whatever feels best.</p>
+<h2 id="instructors-guide">Instructor’s Guide</h2>
+<p>Learners may go through lessons outside of class, so it seems best to keep material for instructors in a separate document called <code>instructors.md</code>, rather than interleaved in the lesson itself. Its structure is:</p>
+<pre><code>---
+layout: page
+title: Lesson Title
+subtitle: Instructor&#39;s Guide
+---
+## Overall
+
+* Point
+
+* Point
+
+## [Topic Title 1](01-slug.html)
+
+* Point
+
+* Point
+
+1.  Discussion of first challenge.
+
+2.  Discussion of second challenge.
+
+## [Topic Title 2](02-slug.html)
+
+* Point
+
+* Point
+
+1.  Discussion of first challenge.
+
+2.  Discussion of second challenge.</code></pre>
+<p><strong>Notes:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>The topic headings must match the topic titles. (Yes, we could define these as variables in a configuration file and refer to those variables everywhere, but in this case, repetition will be a lot easier to read, and our validator can check that the titles line up.)</p></li>
+<li><p>The points can be anything: specific ways to introduce ideas, common mistakes learners make and how to get out of them, or anything else.</p></li>
+<li><p>Full solutions to the challenges do not have to be presented, but every challenge should be discussed, and that discussion should mention how long it typically takes to do. (Those estimates do not go in the challenge itself, since they can increase learners’ stress levels.)</p></li>
+</ol>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label swc-blue-bg" href="http://xwmooc.net">xwMOOC</a>
+        <a class="label swc-blue-bg" href="https://github.com/statkclee/kusung.git">한글소스</a>
+        <a class="label swc-blue-bg" href="mailto:i@xwmooc.net">Contact</a>
+        <a class="label swc-blue-bg" href="http://statkclee.github.io/swcarpentry-version-5-3-new/LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>

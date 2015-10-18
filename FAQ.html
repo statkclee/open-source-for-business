@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>xwMOOC: </title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-59802572-9', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://xwmooc.net" title="xwMOOC">
+          <img alt="xwMOOC banner" src="img/xwMOOC.png" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1 class="title"></h1>
+          
+<h2 id="faq">FAQ</h2>
+<ul>
+<li><p><em>Where can I get help?</em></p>
+<p>Mail <script type="text/javascript">
+<!--
+h='&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x61;&#100;&#x6d;&#x69;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x61;&#100;&#x6d;&#x69;&#110;&#32;&#x61;&#116;&#32;&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript>, or join our <a href="http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org">discussion list</a> and ask for help there.</p></li>
+<li><p><em>Where can I report problems or suggest improvements?</em></p>
+<p>Please <a href="https://github.com/swcarpentry/lesson-template/issues?q=is%3Aopen+is%3Aissue">file an issue</a> or <script type="text/javascript">
+<!--
+h='&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x61;&#100;&#x6d;&#x69;&#110;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'mail us'+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x6d;&#x61;&#x69;&#108;&#32;&#x75;&#x73;&#32;&#40;&#x61;&#100;&#x6d;&#x69;&#110;&#32;&#x61;&#116;&#32;&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;&#x29;</noscript>.</p></li>
+<li><p><em>Why does the new lesson’s repository have to be created using import? Why not fork <code>lesson-template</code> on GitHub?</em></p>
+<p>Because any particular user can only have one fork of a repository, but instructors frequently need to work on several workshops at once.</p></li>
+<li><p><em>Why use Markdown?</em></p>
+<ol style="list-style-type: decimal">
+<li>It is simpler, and easier to write, than HTML or LaTeX.</li>
+<li>It is a lowest common denominator: anything that can be expressed in Markdown can easily be translated into richer formats.</li>
+<li>It is used by a much wider variety of people than other text markup formats like reStructured Text (reST).</li>
+</ol></li>
+<li><p><em>Why use Pandoc? Why not some other converter?</em></p>
+<p>Because it supports a richer dialect of Markdown than Jekyll (the converter that GitHub uses by default). In particular, Pandoc allows us to add styles to headings and lets us specify languages for code blocks without having to wrap them in <code>div</code> tags.</p></li>
+<li><p><em>What do the <a href="https://github.com/swcarpentry/lesson-template/issues?q=is%3Aopen+is%3Aissue">labels</a> mean?</em></p>
+<ul>
+<li><code>bug</code>: something that is wrong</li>
+<li><code>build</code>: changes to <code>Makefile</code>, the validator, or lesson creation process</li>
+<li><code>defer</code>: we will work on, but not now</li>
+<li><code>discussion</code>: for conversations about specific problems and questions</li>
+<li><code>documentation</code>: information about how to use the lesson-template</li>
+<li><code>enhancement</code>: asks for, or adds, a new feature, new information or reword old ones</li>
+<li><code>newcomer-friendly</code>: issue or pull request is a good starting point for someone who is relatively new to GitHub and/or this project</li>
+<li><code>upstream</code>: issue or pull request involving upstream repository, e.g. https://github.com/swcarpentry/lesson-template</li>
+<li><code>work-in-progress</code>: a pull request that is not yet ready for review</li>
+</ul></li>
+<li><p><em>How can we create input cells for particular languages?</em></p>
+<p>Use</p>
+<pre><code>~~~ {.lang}
+some code
+~~~</code></pre>
+<p>where <code>lang</code> is <code>bash</code> for the Unix Shell, <code>r</code> for R, <code>matlab</code> for MATLAB, <code>python</code> for Python, and <code>sql</code> for SQL. For a full list, check:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pandoc</span> -v</code></pre></li>
+</ul>
+<h2 id="debugging">Debugging</h2>
+<p>Please add notes about problems and solutions below.</p>
+<ul>
+<li><p><code>pandoc: command not found</code></p>
+<p>You probably don’t have <a href="http://pandoc.org/installing.html">Pandoc</a> installed.</p></li>
+<li><p><code>pandoc: Error running filter tools/filters/blockquote2div.py</code> due to <code>ImportError: No module named 'pandocfilters'</code></p>
+<p>You probably haven’t installed <a href="https://pypi.python.org/pypi/pandocfilters/1.2.3">pandocfilters</a>.</p></li>
+<li><p><code>pandoc: Error running filter tools/filters/blockquote2div.py tools/filters/blockquote2div.py not found in path</code></p>
+<p>Git has likely checked out the files with the incorrect line endings. On Unix systems the recommended setting is:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> config --global core.autocrlf input</code></pre>
+<p>and on Windows:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> config --global core.autocrlf true</code></pre>
+<p>Note that after changing this setting you will need to either re-clone or re-checkout the files in the repository.</p></li>
+<li><p>If a lesson generates Markdown from an IPython Notebook, then whenever a figure is moved, added, or removed, the auto-generated names of the image files produced by <code>.ipynb</code>-to-<code>.md</code> conversion will change. This confuses version control.</p></li>
+</ul>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label swc-blue-bg" href="http://xwmooc.net">xwMOOC</a>
+        <a class="label swc-blue-bg" href="https://github.com/statkclee/kusung.git">한글소스</a>
+        <a class="label swc-blue-bg" href="mailto:i@xwmooc.net">Contact</a>
+        <a class="label swc-blue-bg" href="http://statkclee.github.io/swcarpentry-version-5-3-new/LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>
