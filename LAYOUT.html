@@ -15,17 +15,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-59802572-9', 'auto');
-      ga('send', 'pageview');
-    
-    </script>
   </head>
   <body class="lesson">
     <div class="container card">
@@ -188,7 +177,7 @@ some code
 <h2 id="writing-lessons-with-r-markdown">Writing Lessons with R Markdown</h2>
 <p>Lessons can be written in R Markdown and converted to Markdown. The main advantages of maintaining lessons in an executable format is 1) not having to copy-paste the output and 2) it is easier to test if new changes break code in other parts of the lesson. The main disadvantage is that there will be more noise when merging the generated content (e.g. different R versions have slightly different wording of error messages).</p>
 <p>After writing or editing a lesson written in R Markdown, automatically generate the Markdown and html versions by running the command <code>make preview</code>. This first runs the <code>knit</code> command from the <a href="http://yihui.name/knitr/">knitr</a> package to convert to Markdown, and then pandoc to convert to html.</p>
-<p>To ensure that the generated Markdown files follow the lesson template guidelines, <code>source</code> the R file <a href="tools/chunk-options.R">tools/chunk-options.R</a>. This file contains settings that format the input and output code chunks, send all generated figures to <code>fig/</code> instead of <code>figure/</code>, and specify a few other knitr options. Thus a lesson should look like the following:</p>
+<p>To ensure that the generated Markdown files follow the lesson template guidelines, <code>source</code> the R file <a href="tools/chunk-options.R" class="uri">tools/chunk-options.R</a>. This file contains settings that format the input and output code chunks, send all generated figures to <code>fig/</code> instead of <code>figure/</code>, and specify a few other knitr options. Thus a lesson should look like the following:</p>
 <pre><code>---
 layout: page
 title: Lesson Title
@@ -215,7 +204,7 @@ mixed with:
 ```
 
 More text.</code></pre>
-<p>When using <a href="tools/chunk-options.R">tools/chunk-options.R</a>, figures are automatically sent to <code>fig/</code>. However it is easier to manage all the figures in a lesson if their names are more descriptive. This can be acheived by setting a more informative <code>fig.path</code> like the example above, which will prepend “topic-title-” to all generated figure names. Furthermore, it is recommended to name the code chunks. Thus if a plot was generated in the example code chunk above, it would be saved as <code>fig/topic-title-chunk-name.png</code>.</p>
+<p>When using <a href="tools/chunk-options.R" class="uri">tools/chunk-options.R</a>, figures are automatically sent to <code>fig/</code>. However it is easier to manage all the figures in a lesson if their names are more descriptive. This can be acheived by setting a more informative <code>fig.path</code> like the example above, which will prepend “topic-title-” to all generated figure names. Furthermore, it is recommended to name the code chunks. Thus if a plot was generated in the example code chunk above, it would be saved as <code>fig/topic-title-chunk-name.png</code>.</p>
 <p>To avoid unecessary merge conflicts in the generated content, do not randomly generate data. Instead use <code>set.seed</code> so that any randomly generated data is always consistent. If introducing the concept of random number generation is outside the scope of the lesson, <code>set.seed</code> can be hidden from the learners in a separate code chunk.</p>
 <pre><code>```{r set-seed, echo=FALSE}
 set.seed(12345)
@@ -300,9 +289,9 @@ subtitle: Instructor&#39;s Guide
       </article>
       <div class="footer">
         <a class="label swc-blue-bg" href="http://xwmooc.net">xwMOOC</a>
-        <a class="label swc-blue-bg" href="https://github.com/statkclee/kusung.git">한글소스</a>
+        <a class="label swc-blue-bg" href="https://github.com/statkclee/open-source-for-business">한글소스</a>
         <a class="label swc-blue-bg" href="mailto:i@xwmooc.net">Contact</a>
-        <a class="label swc-blue-bg" href="http://statkclee.github.io/swcarpentry-version-5-3-new/LICENSE.html">License</a>
+        <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
       </div>
     </div>
     <!-- Javascript placed at the end of the document so the pages load faster -->
