@@ -7,14 +7,18 @@ title: 라이선스
 
 [xwMOOC](http://xwmooc.net/)에서 작업한 한국어 번역 저작물에는 크리에이티브 커먼즈 라이선스가 적용됩니다. 달리 명시하지 않는한 저자와 번역자와 협의한 모든 것은 다음 라이선스를 준수합니다. 
 
-> ### 번역 원본 출처 정보 {.getready}
+> ### 영어 원문 및 한국어 번역 사용허가권
 >
-> Heather Meeker (2015), "Open (Source) for Business: A Practical Guide to Open Source Software Licensing", CreateSpace Independent Publishing Platform; 1st edition  
-> ISBN-10: 1511617772  
-> ISBN-13: 978-1511617772  
-> [Amazon Books](http://www.amazon.com/exec/obidos/ASIN/1511617772/flatwave-20)
+> 이 번역의 원작 " Open Source For Business"는 원저자 헤더 미커(Heather Meeker, [www.heathermeeker.com](http://www.heathermeeker.com))가 영어로 출판하였으며, 번역자 이광춘이 원저자 미커의 허락을 받아서 번역을 하였습니다.  이 책은 크리에이티브 커먼스(Creative Commons)의 비영리( NC, Non-Commercial), 변경금지(ND, No Derivatives) 라이선스([https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode))에 따라서 활용할 수 있습니다.  
+> 
+> The original work of Open Source For Business was written in English by Heather Meeker ([www.heathermeeker.com](http://www.heathermeeker.com)).  This translation was prepared by permission from Ms. Meeker, by Kwangchun Lee.  This work is available under the Creative Commons, NC (Non-Commercial), ND (No Derivatives) license [https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode). 
 
-<img src="img/cc-by-nc-nd.png" width="27%" alt="CC: BY-NC-ND" />
+#### 영어 원문 출처 상세 정보 [Amazon Books](http://www.amazon.com/exec/obidos/ASIN/1511617772/flatwave-20)
+    - Heather Meeker (2015), "Open (Source) for Business: A Practical Guide to Open Source Software Licensing", CreateSpace Independent Publishing Platform; 1st edition 
+    - ISBN-10: 1511617772  
+    - ISBN-13: 978-1511617772  
+    
+<img src="img/cc-by-nc-nd.png" width="17%" alt="CC: BY-NC-ND" />
 
 ### 한국어 이용자는 다음의 권리를 갖습니다:
 
