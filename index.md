@@ -17,7 +17,7 @@ subtitle: 오픈 소스 소프트웨어 라이선싱에 대한 실무 안내서
 
 ### 목차
 
-1. 서문
+1. [서문](ch00-preface.html)
 1. 부: 기본
     1. 장: 무료 소프트웨어와 오픈 소스 소프트웨어에 대한 철학
     1. 장: [컴퓨터 소프트웨어 과외](ch02-tutorial-on-computer-software.html)
