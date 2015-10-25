@@ -40,7 +40,7 @@ subtitle: 1장 자유 소프트웨어와 오픈 소스 소프트웨어에 대한
 
 (스톨만 같은) 자유 소프트웨어 순수주의자와 (토발즈 같은) 기술 실용주의자 사이 철학적 차이가 있지만, *자유 소프트웨어*와 *오픈 소스 소프트웨어*를 지지자들이 경쟁적으로 정의하는 것이 놀랍지 않다.
 
-#### 자유 소프트웨어 정의: 네가지 핵심 자유
+#### 자유 소프트웨어 정의: [네가지 핵심 자유][5]
 
     0. 프로그램을 어떤 목적으로든 원하는 대로 돌릴 자유.
     1. 프로그램 작동원리를 연구하고 변경해서 자신의 필요에 맞춰 컴퓨팅을 실행할 자유.
@@ -53,4 +53,46 @@ subtitle: 1장 자유 소프트웨어와 오픈 소스 소프트웨어에 대한
 >    1. The freedom to study how the program works and change it so it does your computing as you wish 
 >    2. The freedom to redistribute copies so you can help your neighbor
 >    3. The freedom to distribute copies of your modified version to others. By doing this, you can give the whole community a chance to benefit from your changes.
+
+    [5]: GNU는 네가지 자유를 0 부터 3까지 번호를 매김에 유의힌다. 항목 1과 3은 소스코드에 접근을 요구한다. 자세한 내용 [http://www.gnu.org/philosophy/free-sw.html](http://www.gnu.org/philosophy/free-sw.html) 참조한다.
+
+OSI가 반포한 오픈소스 정의(Open Source Definition)은 카피레프트와 방임 소프트웨어 라이선스를 모두 다룬다:
+
+1. 자유로운 재배포
+1. 소스코드 [포함되어야 한다]
+1. 2차 저작물 [허용되어야 한다]
+1. 저자 소스 코드의 진실성
+1. 사람과 집단에 대한 차별 금지
+1. 활동 분야에 대한 차별 금지
+1. 라이선스 배포
+1. 라이선스가 제품에 특정되면 안됨.
+1. 라이선스가 다른 소프트웨어를 제약하면 안됨.
+1. 라이선스는 기술중립적이어야 됨.
+
+> ####  [Open Source Definition from OSI][6] {.callout}    
+>    
+>    1.  Free redistribution
+>    2.  Source code [must be included]
+>    3.  Derived works [must be permitted]
+>    4.  Integrity of the author’s source code
+>    5.  No discrimination against persons or groups
+>    6.  No discrimination against fields of endeavor
+>    7.  Distribution of license 
+>    8.  License must not be specific to a product
+>    9.  License must not restrict other software
+>    10. License must be technology-neutral
+
+OSI는 웹사이트에 GPL이 자신의 [정의][7]에 부합된다고 분명히 언급했다. 만약 이것이 놀랍다면, 놀라면 안된다. 항목 9 가 GPL에 맞지 않는다는 비판을 예상했다. 왜냐하면, GPL에 포함되는 저작물에 부가되는 소프트웨어를 GPL이 통제하려고 하기 때문이다. 설사 두가지 정의가 확실히 다르지만, 차이점이 실무적으로 거의 중요성을 갖지 못하다. OSI는 더이상 정의에 부합되는 모든 라이선스를 승인하지 않고 있고, FSF는 자유 소프트웨어 정의에 부합되는 라이선스만 출시하고 있다.
+
+OSI는 한때 민간사업자와 자유 소프트웨어를 중재하는데 상당한 노력을 했다; 오늘날, 아마도 미미한 관련성을 갖는다 - 스스로 성공에 도취된 희생자. 자유 소프트웨어를 둘러싼 설전이 자유 소프트웨어 자신을 하찮은 존재로 만들어 버리려는 조짐이 있을 때, OSI가 시작했다. OSI 목적은 "[오픈소스 커뮤니티에 서로 다른 지지층 간에 다리를 놓자]"는 것이었다. OSI는 소프트웨어 라이선스를 오픈소스 라이선스로 인증하는데 책임있는 기관이다. 또한 OSI는 오픈소스(Open Source) 인증 [상표][9]를 책임있게 관리한다 - 하지만 이 용어는 상표권으로 아마도 일반적이고 시행할 수 없다. 승인된 모든 오픈소스 라이선스는 OSI 웹사이트에 게시되어 있다. 1990년대, OSI는 오픈소스 정의에 부합되는 거의 모든 라이선스를 인증했다. 하지만, 오늘날, OSI는 신규 라이선스는 거의 승인하지 않는데 이유는 "[라이선스 급증][10]"과 "허영(Vanity) 라이선스"를 억제하고자 했기 때문이다 - 이전에 승인된 많은 라이선스가 단지 한두 프로젝트에만 사용되고 주요 라이선스에 사소한 변종에 불과하다는 경험이 있었다.
+
+    [6]: [http://opensource.org/docs/definition.php](http://opensource.org/docs/definition.php) 참조한다. 데비안 사회적 계약(Debian Social Contract)은 오픈소스 정의가 [http://www.debian.org/social_contract](http://www.debian.org/social_contract)에 나온 데비안 정의에 기반한다고 언급하고 있다.
+    [7]: 이 논평과 대답에 대한 동기를 이해하기 위해서, 8장에서 GPL 준수에 대한 심도깊은 논의를 참조한다: GPL 2 국경분쟁
+    [8]: [http://opensource.org](http://opensource.org)을 참조한다.
+    [9]: 자유 소프트웨어 옹호자 브루스 퍼렌스(Bruce Perens)는 명확히 상표를 등록하려고 노렸했으나 성공하지 못했다. [http://en.wikipedia.org/wiki/Open_source_software](http://en.wikipedia.org/wiki/Open_source_software)를 참조한다. 왜 이 상표가 일반명칭이 되는지 자세한 내용은 15장: 상표를 참조한다. 
+    [10]: "라이선스 급증"에 대한 좀더 많은 정보는 3장을 참조한다: 일반적인 오픈 소스 라이선스
+
+
+### 바이러스는 아니다.
+
 
