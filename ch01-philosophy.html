@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>xwMOOC: 비즈니스를 위한 오픈 소스 소프트웨어</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://xwmooc.net" title="xwMOOC">
+          <img alt="xwMOOC banner" src="img/xwMOOC.png" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1 class="title">비즈니스를 위한 오픈 소스 소프트웨어</h1>
+          <h2 class="subtitle">1장 자유 소프트웨어와 오픈 소스 소프트웨어에 대한 철학</h2>
+<p>대부분의 사람들은 리눅스 커널과 아파치 웹서버 같은 소프트웨어를 “오픈소스” 소프트웨어로 칭한다. 하지만, 오픈소스 운동의 창시자는 <em>오픈소스(open source)</em> 용어에 멈칫한다 - 창시자가 시작한 것은 “자유 소프트웨어” 운동이다. 이 주제에 대해서 처음인 사람은 용어가 풍기는 뉴앙스가 따분할 수 있지만 용어에 차이가 운동 참여자의 철학에 있어 중요한 차이점을 시사한다. 오픈소스 소프트웨어 사용에 관한 현명한 결정을 내리려면, 이 구분을 이해하는 것이 중요한데 이유는 직접적으로 준법 프로그램, 코드 기여와 출시, 위험 평가, 다른 오픈소스 [법률 결정][1]에 접근하는데 관여하기 때문이다.</p>
+<pre><code>[1]: 이러한 철학적 차이점에 대한 흥미롭고 정보가 되는 설명 뿐만 아니라 인터넷 붐 시절 주요 기술 기업에서 멋진 인터뷰가 실려있는 JTS Moore가 감독한 *Revolution O/S* 다큐멘터리를 추천한다. (Wilmington, DE: Wonderview Productions, 2001, DVD)</code></pre>
+<p>자유 소프트웨어 운동 창시자, 리처드 스톨만은 자신의 철학을 기술적 경제적 자유를 진흥하는 것으로 기술하고 있다. 스톨만이 언급했듯이, “소프트웨어 저작권 시스템 아래에서, 소프트웨어 개발은 흔히 소프트웨어 사용을 제어하는 소유자 존재와 연결된다. 이러한 연결고리가 존재하는 한, 독점적 소프트웨어 혹은 그렇지 않은 소프트웨어 선택에 직면한다. 하지만, 이런 연결고리가 내재되거나 혹은 피할 수 없는 것은 아니다; 의문시하고 있는 특정 사회적/법률적 정책의 결과다: [소요자를 갖는다는 결정][2].” 스톨람은 <em>지적재산(intellectual property)</em>을 “선전용어”로 부르고 개괄적으로 [지적재산 사용에 반대한다][3].</p>
+<pre><code>[2]: &quot;소프트웨어가 왜 자유로워야 하는가(Why Software Should be Free), 리차드 스톨만,  [http://www.gnu.org/philosophy/shouldbefree.html](http://www.gnu.org/philosophy/shouldbefree.html)&quot;
+[3]: &quot;&#39;지적재산&#39;이라고 말했나요? 매혹적인 신기류입니다&quot;, 리차드 스톨말, [http://www.gnu.org/philosophy/not-ipr.html](http://www.gnu.org/philosophy/not-ipr.html). 변호사 대부분은 잘못 사용되는 단어에만 반대하는데, 반감이 되는 많은 재료가 된다.</code></pre>
+<p>따라서, 카피레프트는 다른 사람으로 하여금 저작권 이익을 포기하게 하는데 (스톨만이 도덕적으로 불쾌하게 생각함) 저작권법 권한을 사용하는 시스템이다. 자유 소프트웨어 라이선스는 저작권 보호가 가능한 저작의 공유와 변형을 허락한다는 조건아래 폭넓은 저작권 라이선스를 모두에게 부여한다. 이것이 더 넓은 오픈소스에 대한 관념과 사뭇 다르다. 오픈소스는 자유 소프트웨어 뿐만 아니라 방임(permissive) 조건아래 허락되는 소프트웨어도 포함된다.</p>
+<p>오픈소스 운동 초기에, 자유 소프트웨어 반기업적 미사여구가 오픈소스를 채택하지 못하도록 하였다. 그래서, 일부 중재자가 모여서 자유 소프트웨어 추종자와 산업계 이해관계를 조화하고자 했다. 그 결과물이 OSI(Open Source Initiative)다.</p>
+<p>처음으로 오픈소스에 접근하는 사람 대부분은 카피레프트가 공짜로 소프트웨어를 나눠줄 것을 요구한다고 생각한다. 자유 소프트웨어 미사여구가 반기업적 반자본주의적인 경향이 있어, 이해가 간다. 하지만, 이런 선입견이 정확하게 옳지는 않고, 선입견과 자유 소프트웨어 라이선싱 실재와 차이가 상당하다 - 리룩스와 안드로이드 플랫폼 때문에 모든 주요 소비자 가전 제조업체는 말할 것도 없이 레드헷(Red Hat)과 과거 VA 리눅스로 불린 몬타비스타(MontaVista) 소프트웨어 같이 성공적으로 상장된 회사의 존재를 감안하면 그렇다.</p>
+<p>사실 “자유 소프트웨어”에서 <em>free</em> 단어는 가격이 아닌 자유를 지칭한다 - 무료(gratis)가 아니라 자유로운(libre) 의미를 갖는다. 자유 소프트웨어 재단(Free Software Foundation, FSF)에 따르면, “공짜 맥주(free beer)가 아닌 언론의 자유(free speech)를 생각해보라”. 자유 소프트웨어 라이선스는 금전적인 목적으로 소프트웨어를 판매를 금지하지는 않는다; 사실, 이런 비금전적 제약이 오픈소스 라이선싱과도 상반되고, 사용에 일부 제한을 두는 저가 교육용 라이선스를 부여하는 마이크로소프트와 아도비 같은 독점적 소프트웨어 업체에 아마도 더 많은 이해의 범위를 제공한다. 그럼에도 불구하고, 라이선싱 사업을 자유 소프트웨어에만 기반을 두는 것은 비현실적이다. 기술영역은 정확하게 리눅스 같은 자유 소프트웨어를 포용했다. 이유는 자유 소프트웨어 위에서 돈을 벌 필요가 없기 때문다. 따라서, 자유 소프트웨어는 모두 사용하는 인프라 소프트웨어에는 훌륭한 모형이고 전용 응용프로그램에는 좋지 못한 모형이다. 가장 인기있는 오픈소스 소프트웨어가 전자상거래를 위한 LAMP 스택이 된 것은 우연이 아니다; LAMP 스택을 사용하는 사람은 웹 접근 자체를 판매하는 것이 아니라, 웹으로 물건을 팔아 돈을 번다. 지적재산에 대한 주장이 없는 자유 인프라 존재는 번영을 촉진시키는 반면에, 완비된 지적재산 결핍은 실재적으로 번역을 방해한다. 혁신을 선도하는데 있어 비밀은 공공재와 사유재 사이의 적절한 균형점을 찾는 것이다 - 놀랍지 않게도, 기술사업이 자유 소프트웨어를 포용하면서 이것이 지난 20년에 걸쳐 일어난 것이다.</p>
+<p>리차드 스톨만은 GNU 프로젝트와 자유 소프트웨어 운동의 설립자로 GPL의 저자다. 스톨만은 보수나 이익보다는 공동체에 좋은 일을 하고 명성이 높아진다는 전망으로 프로그래머가 동기부여된다고 믿는다. 물론, 이런 면에서 스톨만은 민간 사업영역에 있는 대부분의 프로그래머와는 다르다. 그리고 만약 한사람이 정반대로 스톨만의 자유 소프트웨어 논지를 구체화했다면, 아마도 리누스 토발즈일 것이다 - 물론 다른 많은 사람이 그 역할을 주장할 수도 있다. 1996년, 헬싱키 대학에 학생으로 재학하면서 최초 리눅스 커널을 리눅스 토발즈가 작성했다. 그때 이후로 토발즈는 기술 혁신, 특히 리눅스 커널에 관여했다. 오늘날도 토발즈는 여전히 <a href="http://www.kernel.org" class="uri">http://www.kernel.org</a> 사이트에 리눅스 재단에서 유지관리하는 공개된 커널 방향에 지침을 주고 있다. 토발즈는 자유 소프트웨어 이념에 대한 추종자라기 보다는 자유로이 이용가능한 소프트웨어에 대한 추종자에 가깝다. 토발즈는 가끔 스톨만 캠프에서 떨어져 나가기도 하고, 주로 정치적 옹호자라기 보다 기술자다.</p>
+<p>사실, 스톨만과 토발즈는 이념에 대한 전쟁보다는 공생체다. 라이선싱 모형은 변화를 주도할 훌륭한 소프트웨어 없이는 성공할 수 없고 소프트웨어는 변화를 가능하게 하는 라이선싱 모형없이는 성공할 수 없다.</p>
+<h3 id="오픈소스-개발-모형">오픈소스 개발 모형</h3>
+<p>사람들이 오픈소스에 관해서 말할 때, 두가지 다른 것을 의미한다; 라이선싱 모형과 개발 모형. 이 책 대부분은 라이선싱 모형을 논의하는데, 오픈소스 소프트웨어 라이선스로 구체화된다.</p>
+<p>오픈소스 개발 모형이 실질적으로 오픈소스 소프트웨어 가치를 창출한다. 라이선스는 가치를 창출하지 못하는데 이유는 라이선스는 순전히 모형을 가능하게 하는 수단이다. 유명한 에릭 레이몬드가 저술한 오픈소스 개발에 대한 중요한 기사에 나온 “[성당과 시장(The Cathedral and the Bazaar)][4]” 비유를 통해 이 모형을 가장 잘 이해할 수 있다. 독점적 소프트웨어 개발은 마치 중세 성당 공사와 같다: 강력한 조직 (교회)가 프로젝트를 마음속으로 상상하고, 자금을 모으고, 건축책임자를 임명하고 나면 건축책임자는 장인과 건축기사를 고용해서 프로젝트를 실행에 옮긴다. 프로젝트 진도는 후원자 자금과 건축책임자가 프로젝트를 관리감독하는 능력에 따라 제한된다. 오픈소스 개발은 시장같다. 누구나 물건을 발 수 있다. 시장이 팔고 사는 것을 결정한다. 개발은 협력이 바탕이 되고, 자원은 희소하지 않고, 한사람 혹은 한 조직이 전체 프로젝트를 제어하지 못한다. 만약 시장에 수요가 있다면, 프로젝트 방향은 변하기도 하고, 프로젝트가 다수 프로젝트로 쪼개지기도 한다.</p>
+<pre><code>[4]: 레이몬드 온라인 버젼 기사는 세월에 따라 변했다. 현재 버젼은 다음을 참조한다: [http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)</code></pre>
+<p>많이 사람들이 자유 소프트웨어 운동에 대한 미사여구에 혼동한다. 특히 자유 소프트웨어 운동이 전체주의처럼 들릴 때 그렇다: 모든 소프트웨어가 GPL 아래 있어야 되고, 포킹은 일어날 수 없는 등등. 레이몬드의 자유시장경제 비젼과 꽤 차이가 난다. 여기서 개발 내용이 시장변덕을 맞추려고 변할 수 있다. 만약 두 비젼을 조화하기 어려워 보인다면, 자유방임 시장에서조차도 표준화하려는 자연스러운 경향이 있다. 이것이 의미하는 바는 단지 일부 포킹(라이선싱 조건 혹은 소프트웨어 코드)만 유용하다는 것이다. 그래서 심지어 시장에서 자유로운 참여자도 자발적으로 본인 작업을 표준화한다. 그렇지 않으면 상당한 노력이 비호환성을 해결하는데 낭비된다. 따라서, 오픈소스는 자유가 극대화되지만 일부 관행이 막힌 세상이다 - 명령에 의한 것이 아니라 합의에 의한 것이다.</p>
+<h3 id="자유-소프트웨어-정의와-오픈소스-정의">자유 소프트웨어 정의와 오픈소스 정의</h3>
+<p>(스톨만 같은) 자유 소프트웨어 순수주의자와 (토발즈 같은) 기술 실용주의자 사이 철학적 차이가 있지만, <em>자유 소프트웨어</em>와 <em>오픈 소스 소프트웨어</em>를 지지자들이 경쟁적으로 정의하는 것이 놀랍지 않다.</p>
+<h4 id="자유-소프트웨어-정의-네가지-핵심-자유5">자유 소프트웨어 정의: [네가지 핵심 자유][5]</h4>
+<pre><code>0. 프로그램을 어떤 목적으로든 원하는 대로 돌릴 자유.
+1. 프로그램 작동원리를 연구하고 변경해서 자신의 필요에 맞춰 컴퓨팅을 실행할 자유.
+2. 사본을 만들고 재배포하여 이웃을 도울 수 있는 자유.
+3. 변형한 버젼 사본을 다른 사람들에게 배포할 자유. 이를 통해서 본인이 만든 변경으로부터 나온 혜택을 공동체 전체에 환원시킬 수 있다.</code></pre>
+<div id="the-free-software-definition-the-four-essential-freedoms" class="callout panel panel-info">
+<div class="panel-heading">
+<h4><span class="glyphicon glyphicon-pushpin"></span>The Free Software Definition: The Four Essential Freedoms</h4>
+</div>
+<div class="panel-body">
+<ol start="0" style="list-style-type: decimal">
+<li>The freedom to run the program as you wish, for any purpose</li>
+<li>The freedom to study how the program works and change it so it does your computing as you wish</li>
+<li>The freedom to redistribute copies so you can help your neighbor</li>
+<li>The freedom to distribute copies of your modified version to others. By doing this, you can give the whole community a chance to benefit from your changes.</li>
+</ol>
+</div>
+</div>
+<pre><code>[5]: GNU는 네가지 자유를 0 부터 3까지 번호를 매김에 유의힌다. 항목 1과 3은 소스코드에 접근을 요구한다. 자세한 내용 [http://www.gnu.org/philosophy/free-sw.html](http://www.gnu.org/philosophy/free-sw.html) 참조한다.</code></pre>
+<p>OSI가 반포한 오픈소스 정의(Open Source Definition)은 카피레프트와 방임 소프트웨어 라이선스를 모두 다룬다:</p>
+<ol style="list-style-type: decimal">
+<li>자유로운 재배포</li>
+<li>소스코드 [포함되어야 한다]</li>
+<li>2차 저작물 [허용되어야 한다]</li>
+<li>저자 소스 코드의 진실성</li>
+<li>사람과 집단에 대한 차별 금지</li>
+<li>활동 분야에 대한 차별 금지</li>
+<li>라이선스 배포</li>
+<li>라이선스가 제품에 특정되면 안됨.</li>
+<li>라이선스가 다른 소프트웨어를 제약하면 안됨.</li>
+<li>라이선스는 기술중립적이어야 됨.</li>
+</ol>
+<div id="open-source-definition-from-osi6" class="callout panel panel-info">
+<div class="panel-heading">
+<h4><span class="glyphicon glyphicon-pushpin"></span>[Open Source Definition from OSI][6]</h4>
+</div>
+<div class="panel-body">
+<ol style="list-style-type: decimal">
+<li>Free redistribution</li>
+<li>Source code [must be included]</li>
+<li>Derived works [must be permitted]</li>
+<li>Integrity of the author’s source code</li>
+<li>No discrimination against persons or groups</li>
+<li>No discrimination against fields of endeavor</li>
+<li>Distribution of license</li>
+<li>License must not be specific to a product</li>
+<li>License must not restrict other software</li>
+<li>License must be technology-neutral</li>
+</ol>
+</div>
+</div>
+<p>OSI는 웹사이트에 GPL이 자신의 [정의][7]에 부합된다고 분명히 언급했다. 만약 이것이 놀랍다면, 놀라면 안된다. 항목 9 가 GPL에 맞지 않는다는 비판을 예상했다. 왜냐하면, GPL에 포함되는 저작물에 부가되는 소프트웨어를 GPL이 통제하려고 하기 때문이다. 설사 두가지 정의가 확실히 다르지만, 차이점이 실무적으로 거의 중요성을 갖지 못하다. OSI는 더이상 정의에 부합되는 모든 라이선스를 승인하지 않고 있고, FSF는 자유 소프트웨어 정의에 부합되는 라이선스만 출시하고 있다.</p>
+<p>OSI는 한때 민간사업자와 자유 소프트웨어를 중재하는데 상당한 노력을 했다; 오늘날, 아마도 미미한 관련성을 갖는다 - 스스로 성공에 도취된 희생자. 자유 소프트웨어를 둘러싼 설전이 자유 소프트웨어 자신을 하찮은 존재로 만들어 버리려는 조짐이 있을 때, OSI가 시작했다. OSI 목적은 “[오픈소스 커뮤니티에 서로 다른 지지층 간에 다리를 놓자]”는 것이었다. OSI는 소프트웨어 라이선스를 오픈소스 라이선스로 인증하는데 책임있는 기관이다. 또한 OSI는 오픈소스(Open Source) 인증 [상표][9]를 책임있게 관리한다 - 하지만 이 용어는 상표권으로 아마도 일반적이고 시행할 수 없다. 승인된 모든 오픈소스 라이선스는 OSI 웹사이트에 게시되어 있다. 1990년대, OSI는 오픈소스 정의에 부합되는 거의 모든 라이선스를 인증했다. 하지만, 오늘날, OSI는 신규 라이선스는 거의 승인하지 않는데 이유는 “[라이선스 급증][10]”과 “허영(Vanity) 라이선스”를 억제하고자 했기 때문이다 - 이전에 승인된 많은 라이선스가 단지 한두 프로젝트에만 사용되고 주요 라이선스에 사소한 변종에 불과하다는 경험이 있었다.</p>
+<pre><code>[6]: [http://opensource.org/docs/definition.php](http://opensource.org/docs/definition.php) 참조한다. 데비안 사회적 계약(Debian Social Contract)은 오픈소스 정의가 [http://www.debian.org/social_contract](http://www.debian.org/social_contract)에 나온 데비안 정의에 기반한다고 언급하고 있다.
+[7]: 이 논평과 대답에 대한 동기를 이해하기 위해서, 8장에서 GPL 준수에 대한 심도깊은 논의를 참조한다: GPL 2 국경분쟁
+[8]: [http://opensource.org](http://opensource.org)을 참조한다.
+[9]: 자유 소프트웨어 옹호자 브루스 퍼렌스(Bruce Perens)는 명확히 상표를 등록하려고 노렸했으나 성공하지 못했다. [http://en.wikipedia.org/wiki/Open_source_software](http://en.wikipedia.org/wiki/Open_source_software)를 참조한다. 왜 이 상표가 일반명칭이 되는지 자세한 내용은 15장: 상표를 참조한다. 
+[10]: &quot;라이선스 급증&quot;에 대한 좀더 많은 정보는 3장을 참조한다: 일반적인 오픈 소스 라이선스</code></pre>
+<h3 id="바이러스는-아니다.">바이러스는 아니다.</h3>
+<p>오픈 소스 옹호자는 용어에 관해 지나치게 규칙을 찾고, 올바른 단어 사용에 관한 상호공격은 오픈소스 세계에서 유감스럽게도 흔하다. 하지만, 오픈 소스 라이선싱 논의에서 단어 <em>바이러스(viral)</em>를 제거하는 것이 오래 전에 행해졌어야 할 것인데 이유는 이 단어가 오픈소스 라이선싱 원칙에 대한 이해를 왜곡하고 제한하기 때문이다. 지탄받아야 될 사람은 거의 변호사다. 기술사업영역에 사람들 특히 변호사가 카피레프트 라이선스를 기술할 때, 종종 단어 <em>바이러스(viral)</em>를 사용한다. 불행히도, 이 단어는 선동적일 뿐만 아니라 부정확하다. 변호사에게 선동적인 것은 게임의 부분이지만, 부정확한 것은 가장 나쁜 유형의 죄다.</p>
+<p>올바른 용어에 대한 다양한 선택지가 있다: <em>자유 소프트웨어(free software)</em>, <em>카피레프트(copyleft)</em>, <em>상호(reciprocal)</em>, <em>세습(hereditary)</em>. 하지만 최선의 선택은 카피레프트(copyleft)다. 카피레프트 라이선스는 소프트웨어 바이너리의 배포 조건으로 배포자가 대응되는 소스코드를 동일한 라이선싱 조건 아래 이용가능하게 만들 것을 요구하는 라이선스다. 카피레프트 라이선스는 소프트웨어 저작권을 고수한다; 얼마나 많은 후속 배포가 일어나도라도, 라이선스 조건은 동일성을 유지한다. 변호사에게, 이것은 하나의 부동산에 대한 지역권(easement)과 같다 - 부동산이 얼마나 많이 팔리냐에 관계없이 소유권 증서를 이용하는 부동산 저당권과 같은 채무. 카피레프트 라이선스에는 GPL, LGPL, MPL, EPL, 그리고 수박 겉핥기 식의 나머지가 있다. 하지만, 이 개념을 기술하는데 <em>바이러스(viral)</em> 단어를 사용하는 것은 잘못 오도하고 불필요한 공포를 조장한다. 매년 저자는 이 영역 법률 고객에게 카피레프트 라이선스에 관한 단 하나 가장 중요한 선입견이 <em>바이러스(viral)</em>라는 단어 때문이라고 조언한다.</p>
+<p>단일 프로그램에서 GPL 코드와 다른 코드를 조합하는 것은 흔히 “2차 저작물(derivative work)”을 생성한다고 한다. 이것은 만약 해당 프로그램에 어떤 GPL 코드가 있다면, 프로그램에 있는 모든 코드는 GPL 조건으로 이용가능하게 만들어야 된다고 GPL이 정의하기 때문이다. 그 밖의 어떤 행위도 GPL 위반이 된다. 바이러스가 머릿속에서 춤추는 상상을 하는 회사는 이점을 걱정한다. 만약 GPL과 독점적 코드가 조합되어 단일 프로그램이 되면, GPL 라이선싱 조건이 독점적 코드를 “감염(infect)”시켜서 독점적 코드를 자동적으로 GPL 조건으로 다시 라이선스해야 되는 것을 걱정한다. 그리고 나서, 독점적 코드를 작성하는 회사 저작자는 법으로 본인이 소유한 독점적 코드에 소스코드를 강제로 제공하게 됨을 걱정한다. 이것은 소프트웨어 회사에 있어서 침대 아래 숨어있던 무서운 엄청난 괴물을 불러일으키는 것에 상응한다.</p>
+<p>사실, 만약 회사가 GPL을 위반하는 방식으로 GPL과 독점적 코드를 조합한다면, 결과는 GPL 위반이 된다 - 그 이상도, 그 이하도 아니다. 법률적으로 이것이 의미하는 것은 GPL 코드 저자가 GPL 코드 위반에 대한 구제방법을 갖을 수 있다는 것이다. 그리고 만약 라이선스가 결과로 만료되면, 저자는 GPL 소프트웨어가 다른 사람이 라이선스하지 않는 사용에 대해 구제방법을 갖을 수 있다. 근본적으로 양쪽 모두 저작권 침해 주장이다. 저작권 침해 주장에 대한 법률적 구제방법은 손해배상(돈)과 법원명령(GPL 코드 사용 중지)이다.</p>
+<p>사실, GPL이 독점적 코드를 전염시키고 라이선스 조건을 변경시키는 법률적 메커니즘은 없다. 소프트웨어가 특정 조건 아래 사용허가되기 위해서, 합리적으로 사용허가권을 주는 사람이 특정 조건 아래 코드를 제공함에 있어 사용허가권을 갖는 사람이 결론을 내리도록 저자는 조취를 취해야 한다. 그에 반해서, GPL을 위반해서 독점적 코드와 GPL 코드를 단일 프로그램에 조합하는 것은 라이선스 불호환(license incompatibility)이 된다 - 두 조건이 충돌나고 동시에 만족될 수 없음을 의미한다. 이런 라이선스 불호환에 대한 더 나은 비유는 소프트웨어 바이러스 보다는 소프트웨어 버그다. 오래전에 방영된 TV 프로그램(<em>Lost in Space</em>)에서 팔을 마구 흔들면서 “계산할 수 없어!”라고 말하는 로봇을 생각해보라. 이것에 대한 아이디어를 얻을 것이다.</p>
+<h3 id="오픈open-철학">“오픈(Open)” 철학</h3>
+<p>자유 소프트웨어 철학에 동의를 하던 말던, 적어도 자유 소프트웨어 철학은 사려깊고 대체로 일관성이 있다. 지난 수십년간 열림(openness)에 대한 더 넓은 개념이 개발됐고, 오픈소스 소프트웨어 성공에 활용했다. 좀더 최근 확장된 개념이 전통적인 자유 소프트웨어 이념보다 덜 엄격할 수 있지만, <em>오픈(open)</em>도 또한 기술 저널리즘에서 남용되는 단어 중에 하나가 되었다. 하지만, “오픈” 개념이 기술산업에서 사업방식을 어떻게 바꿨는지 이해하는 것이 중요하다.</p>
+<p><em>오픈</em>에 대한 단일 정의는 존재하지 않는다. 많은 것이 오픈이라고 주장한다. 하지만, 전반적으로 오픈 패러다임은 외부 당사자를 제외하기 보다는 외부 당사자를 참여시키고자 한다. 오픈 모형은 또한 투명성과 지위보다는 능력에 기반한 참여에 초점을 두는 특징을 갖고 있다. 자유든 무료든 지적재산권에 대한 라이선싱은 방정식의 일부분이다.</p>
+<p>이점을 절실히 느낄 수 있도록, 10년도 되지 않아 2007년에 출시된 핸드폰에 장착되는 애플 iOS 플랫폼의 혁명적인 면을 생각해보다. 이 플랫폼을 “오픈”이라고 부른다 - 하지만, 이것은 오픈소스 소프트웨어는 아니다. 누구나 애플 iOS 플랫폼에 무료 개발도구를 사용해서 개발할 수 있다는 점에서 오픈이다. 오픈소스 옹호자는 재빨리 진실된 오픈 기술 환경이 아니라는 점을 지적할 수 있다. 개발자는 개발자 계약(developer agreement)에 서명해야 하고, 앱스토어를 경유해서만 판매할 수 있고, 많은 플랫폼 규칙을 준수해야 된다. 하지만, 그 당시 애플의 조치는 극적이고, 혁명적이고, 거의 예상하지 못한 방식으로 오픈한 것이다.</p>
+<p>2008년 안드로이드 플랫폼이 소개되었다. 이 플랫폼은 오픈 개념을 확장했다; 안드로이드 플랫폼은 오픈소스 소프트웨어에 기반하고, 많은 제조업체에 제공되었고, 다수 앱스토어가 경쟁하는 것을 허용했다. 그러는 동안, 리눅스 컴퓨터 O/S는 상당기간 성장했다. 오랜 기간동안, 리눅스는 서버 시장과 임베디드 시스템을 넘어 시장에 침투하지 못했다; 데스크톱 시간에는 거의 전무했다. 엄밀히 오픈 플랫폼에 가장 가깝지만, 그 오픈 자체가 사업모형으로는 그다지 매력적이지 않음을 의미한다. 레드햇은 1999년 상장되었고, 그때 이후로 리눅스 배포판 시장은 솎아졌다. 주로 서비스와 고객지원에 기반한 사업모형에 내재한 어려움으로 인해서 시장에서 많은 업체가 활동하기에는 충분한 공간을 주지 못했다. 하지만 레드햇은 사업을 성장시켜 나갔고, 전자상거래 경제는 거의 독점적으로 레드햇에 의존하고 있다.</p>
+<p>2010년대에 산업집단이 함께 뭉쳐 오픈 인프라 계획을 후원하는 것이 매우 일반화되었다. 인프라를 서비스(Infrastructure as a Service, IaaS)로 제공하는 오픈소스 프로젝트, 오픈스택(OpenStack)이 2010년에 시작되었고 엄청난 인기를 모았다. 오픈스택을 델, EMC, 오라클, HP, AT&amp;T, 레드햇, IBM, 캐노니컬, 야후, 랙스페이스, 인텔, 시스코 같은 엄청난 기술회사들이 후원하고 있다.</p>
+<p>오픈소스 프로젝트에 이러한 기라성같은 기술회사들이 재빨리 그리고 기꺼이 협력한다는 생각은 10년 전만 하더라도 상상할 수 없었다. 오픈과 폐쇄 사이 이념 전쟁의 결과 오픈이 승리를 거두었다. 하지만, 정확하게 그 이념에 대해서, “오픈”이라는 발상은 항상 변화하고 확장된다는 것이다. 그리고, 오픈이 사업의 미래를 형성하는데 도움을 주듯이 놀라움을 지속적으로 전달할 것이다.</p>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label swc-blue-bg" href="http://xwmooc.net">xwMOOC</a>
+        <a class="label swc-blue-bg" href="https://github.com/statkclee/open-source-for-business">한글소스</a>
+        <a class="label swc-blue-bg" href="mailto:i@xwmooc.net">Contact</a>
+        <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>
