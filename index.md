@@ -23,7 +23,7 @@ subtitle: 오픈 소스 소프트웨어 라이선싱에 대한 실무 안내서
     1. 장: [컴퓨터 소프트웨어 과외](ch02-tutorial-on-computer-software.html)
 1. 부: 오픈 소스 소프트웨어 이론과 준법 준수
     3. 장: [일반적인 오픈 소스 라이선스](ch03-open-source-license.html)
-    4. 장: 라이선스 호환성
+    4. 장: [라이선스 호환성](ch04-license-compatibility.html)
     5. 장: 조건부 라이선싱
     6. 장: 배포란 무엇인가?
     7. 장: 고지 요구사항
