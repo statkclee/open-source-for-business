@@ -31,5 +31,35 @@ subtitle: 4장 라이선스 호환성
 #### 잠재적 주의의무 쟁점
 
 
+권리 정리와 관련된 문제는 많은 형태로 표출되지만, 라이선스 제약과 라이선스 조건이 가장 흔하다. 라이선스 제약은 독점적 라이선싱에만 일어난다; 라이선스 조건이 오픈소스 라이선싱에 좀더 흔한 쟁점이다.
+
+
+오픈소스 소프트웨어에서, 조건의 충돌이 많은 주의의무 문제를 생성한다. 상기 그림에서 목적 코드를 개발한 회사는 문제를 해결하려면 나가는 라이선스를 GPL로 변경해야 될 것이다. 올바르게 라이선싱이 동작하는 소프트웨어를 생성하려면, 나가는 라이선스와 호환가능한 인입 라이선스만을 사용할 필요가 있다. 따라서, 나가는 라이선스와 비교해서, 더 적은 일관된 조건을 갖는 인입 라이선스만 사용되어야 한다. 오픈소스 세계에서 이러한 점이 호환성에 관해서 얘기할 때, 의미하는 것이다.
+
+그림 4.4 예제에서, GPL3와 호환되는 많은 라이선스가 해당 프로젝트를 통제할 수 있다. 기본적 규칙은 나가는 라이선스는 최대한 조건을 갖는 라이선스가 되야 한다.
+
+하지만, AGPL (더 많은 조건을 보유), 이클립스 공증 라이선스, 혹은 CDDL (모두 다른 카피레프트 조건을 보유) 같은 라이선스로 통제되는 구성요소는 상기 소프트웨어에 포함될 수 없다. 이 모든 카피레프트 라이선스는 어색한 저녁 파티에 손님과 같다 - 각자의 식단은 상호 배타적이다. 이런 이유는 라이선스 모두 소프트웨어 추가적인 라이선싱 제약을 두는 것을 거부하기 때문이다. 또한, 각각은 약간 다른 조건을 담고 있어서, 각 라이선스는 다른 것에 대하여 부가적인 제약을 구성하고 있다. 예를 들어, GPL 2 6절에서 다음과 같이 언급하고 있다:
+
+~~~ {.python}
+Each time you redistribute the Program (or any work based on the Program), the recipient automatically receives a license from the original licensor to copy, distribute or modify the Program subject to these terms and conditions. You may not impose any further restrictions on the recipients’ exercise of the rights granted herein.
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
