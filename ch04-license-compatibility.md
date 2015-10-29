@@ -54,13 +54,12 @@ subtitle: 4장 라이선스 호환성
 Each time you redistribute the Program (or any work based on the Program), the recipient automatically receives a license from the original licensor to copy, distribute or modify the Program subject to these terms and conditions. You may not impose any further restrictions on the recipients’ exercise of the rights granted herein.
 ~~~
 
-일부 카피레프트 라이선스는 호환된다. 예를 들어, LGPL 코드는 GPL 상응하는 버젼 아래 재배포될 수 있는데 이유는 GPL이 아닌(non-GPL) 소프트웨어와 특정 유형의 통합을 가능하게 하도록 단지 LGPL이 부가적인 허락을 담고 있기 때문이다. LGPL 버젼 3에는 이점이 더 명확하다. LGPL 3이 GPL 3에 추가적인 조건을 넣어 초안을 작성했기 때문이다; 대응되는 LGPL 버젼 2에 대해서, LGPL 2.1 버젼 3절에는 이를 허용하는 구체적인 조항이 담겨있다:
+일부 카피레프트 라이선스는 호환된다. 예를 들어, LGPL 코드는 GPL 상응하는 버젼 아래 재배포될 수 있는데 이유는 GPL이 아닌(non-GPL) 소프트웨어와 특정 유형의 통합을 가능하게 하도록 단지 LGPL이 부가적인 허락을 담고 있기 때문이다. LGPL 버젼 3에는 이점이 더 명확하다. LGPL 3이 GPL 3에 추가적인 조건을 넣어 초안을 작성했기 때문이다; 대응되는 LGPL 버젼 2에 대해서, LGPL 2.1 버젼 3절에는 이를 허용하는 구체적인 조항이 담겨있다:[^1]
 
 ~~~ {.python}
 You may opt to apply the terms of the ordinary GNU General Public License instead of this License to a given copy of the Library. …
-Once this change is made in a given copy, it is irreversible for that copy, so the ordinary GNU General Public License applies to all subsequent copies and derivative works made from that copy. This option is useful when you wish to copy part of the code of the Library 
-into a program that is not a library.
-~~~
+Once this change is made in a given copy, it is irreversible for that copy, so the ordinary GNU General Public License applies to all subsequent copies and derivative works made from that copy. This option is useful when you wish to copy part of the code of the Library into a program that is not a library.
+~~~ 
 
 상기 논의는 저자가 생각하는 수직 호환성(vertical compatibility)과 관계된다; 인입되는 라이선스가 주어진 상태에서, 인입 라이선스로 보장된 소프트웨어는 종합적으로 외부로 나가는 또다른 라이선스가 보장하는 코드 기반으로 재배포할 수 있는가? 하지만, 오픈소스 라이선싱은 2차 라이선싱 영역에 있지 않음을 명심한다. 인입 라이선스 조건은 변하지 않는다; 실제로 모든 수령자에게 직접 간다. 하지만, 오픈소스에서 저작권 모든 권리가 부여되서, 부여되는 권리 사이에는 어떤 불일치도 있을 수 없다; 유일한 차이는 라이선스 행사에 부여된 조건이다. 따라서, 인입되는 라이선스와 외부로 나가는 라이선스의 조건이 상호 배타적이지만 않으면, 호환성 문제는 없다.
 
@@ -71,14 +70,28 @@ into a program that is not a library.
 - 프로그램에 어떤 코드가 GPL이면, 모든 코드는 GPL로 제공되어야만 된다.
 - LGPL 코드는 프로그램에 다른 코드와 동적 링크 라이브러리(Dynamically linked library)로만 통합될 수 있다.
 
+그림 4.5에 수평적 비호환성에서 생겨날 수 있는 문제가 나와있다. 이경우에, 프로그램이 다양한 라이선스 아래 인입조건으로 보장되는 코드를 담고 있다. 하지만, 카피레프트 라이선스 아래 코드는 어떤 다른 조건으로 재배포될 수는 없다. 그래서, 정상 동작할 단 하나의 라이선스도 없다[^2]. 이것은 마치 누구도 만족시킬 수 없는 저녁식탁과 같다. GPL은 다른 누군가와 같은 메뉴를 먹을 수 없을 뿐만 아니라, 같은 식탁에 다른 메뉴의 존재를 참아내지 못한다[^3].
+
+[^1]: [http://opensource.org/licenses/lgpl-license.php](http://opensource.org/licenses/lgpl-license.php).
+[^2]: 아파치 2.0과 GPL 2.0 사이 이론적 혹은 실질적 비호환성에 대한 논의는 이번 장에서 후속 내용을 참조한다.
+[^3]: 물론 다른 독점적 라이선스도 동일하다는 것도 사실이다. 
+
 <img src="fig/fig-4-5-problem-due-to-horizontal-incompatibility.png" width="70%" alt="그림 4.5 수평 비호환성 때문에 발생한 문제" />
 그림 4.5 수평 비호환성 때문에 발생한 문제
 
+대조로, 약한 카피레프트 라이선스 아래 제공되는 소프트웨어는 동일한 프로그램에 공존할 수 있다. 물론 방임 라이선스는 다른 코드에 어떤 제약도 두지 않는다. 그래서 그림 4.6에 나온 상황은 정상 동작한다.
 
+그림 4.6에 나온 모든 라이선스는 카피레프트지만, 약한 카피레프트이기 때문에, 동시에 라이선싱 조건을 전달해서 수용자에게 라이선싱을 할 수 있따. 각 구성요소는 자신의 라이선스로 통제되고, 전체적으로 코드 기반은 어떤 라이선스도 갖지 않는다. 이것은 마치 손님 각각이 본인 메뉴를 먹고, 손님이 함께 먹지 않으면, 손님 모두 같은 식탁에 앉아 식사를 하는 것과 같다.
 
+<img src="fig/fig-4-6-horizontal-compatibility.png" width="70%" alt="그림 4.6 수평 호환성" />
+그림 4.6 수평 호환성
 
+#### 라이선스 버그 회피 방법
 
+상기 모든 시나리오는 제3자로 사용허가된 오픈소스 소프트웨어 컴포넌트를 사용해서 소프트웨어를 만들어내는 회사의 관점에서 주의의무를 바라봤다. 이 경우에, 대체로 개발자는 인입 라이선스를 기정사실로 받아들일 필요가 있다. 하지만, 일부 개발자는 인입 라이선싱 책무로 지정하는 않은 라이선스로 본인 소프트웨어를 출시하고자 선택옵션을 갖고자 한다. (이 선택옵션에 대한 좀더 자세한 논의에 대해서는 16장 오픈소스 출시를 참조한다.) 상기 논의가 왜 이런 선택옵션이 그렇게 중요하가에 대한 한 단면을 보여주고 있다. 개발자는 개발자가 원하는 방식으로 자신의 소프트웨어를 출시할 수 있다. 하지만, 만약 개발자가 포함되어야 하는 독점적 컴포넌트 혹은 다른 카피레프트 컴포넌트를 같은 프로그램에 라이브러리로 GPL을 고르는 것같은 특별한 선택을 한다면, 다른 개발자가 다른 프로젝트에 재사용할 수 없는 소프트웨어를 만들어내는 상황이 된다. 때때로 이런 선택을 하게 되면, 이중 라이선싱 모형(dual licensing model)과 같이 사용자로 하여금 독점적 라이선스를 구매하도록 하는 방식이 된다. 
+그런 경우, 개발자는 라이선스 버그와 해결할 경로를 의도적으로 만든 것이 된다. 하지만, 만약 그런 선택을 심사숙고하지 않고 하게 한다면, 라이선싱은 역효과를 낳고, 그저 문제만 만들어 낸다.
 
+### 아파치 2 와 GPL 2
 
 
 
