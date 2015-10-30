@@ -23,9 +23,9 @@ subtitle: 서문
 
 오늘날 기술사업에 종사하는 대부분의 사람들은 윈도우 시대에서 자라나서, 또다른 운영체제(컴퓨팅 역사에서 중대한 역할을 한 유닉스)에 관해서 그다지 알고 있지 못하다. 유닉스(UNIX)가 "자유 소프트웨어(free software)" 모형이 출현한 이유다. 
 
-컴퓨팅의 초기 시절에, 유닉스가 주도적인 운영체제였다. AT&T 벨연구소에서 개발했다. 그 당시에 AT&T는 지배적인 사업라서 독점금지법의 결과로 법무부와 합의된 양자간 합의된 [법원판결(consent degree)][1]에 묶여 전화사업분야를 제외한 상업적 활동에 참여가 금지된다. 따라서, 최고 가장 똑똑한 AT&T 엔지니어는 AT&T 벨연구소로 불리는 비영리 단체에서 컴퓨터 과학 개발을 수행하게 되었다.
+컴퓨팅의 초기 시절에, 유닉스가 주도적인 운영체제였다. AT&T 벨연구소에서 개발했다. 그 당시에 AT&T는 지배적인 사업라서 독점금지법의 결과로 법무부와 합의된 양자간 합의된 법원판결(consent degree)[^1]에 묶여 전화사업분야를 제외한 상업적 활동에 참여가 금지된다. 따라서, 최고 가장 똑똑한 AT&T 엔지니어는 AT&T 벨연구소로 불리는 비영리 단체에서 컴퓨터 과학 개발을 수행하게 되었다.
 
-    [1]: "Modification of Final Judgment," August 24, 1982, filed in case 82-0192, *United States of America v. Western Electric Company, Incorporated, and American Telephone and Telegraph Company*, U.S. District Court for the District of Columbia, [http://web.archive.org/web/20060827191354/members.cox.net/hwilkerson/documents/AT&T_Consent_Decree.pdf](http://web.archive.org/web/20060827191354/members.cox.net/hwilkerson/documents/AT&T_Consent_Decree.pdf).
+[^1]: "Modification of Final Judgment," August 24, 1982, filed in case 82-0192, *United States of America v. Western Electric Company, Incorporated, and American Telephone and Telegraph Company*, U.S. District Court for the District of Columbia, [http://web.archive.org/web/20060827191354/members.cox.net/hwilkerson/documents/AT&T_Consent_Decree.pdf](http://web.archive.org/web/20060827191354/members.cox.net/hwilkerson/documents/AT&T_Consent_Decree.pdf).
 
 켄톰슨(Ken Thompson)과 데니스 리치(Dennis Ritchie)는 벨연구소 과학자로 컴퓨터 프로그램을 공부한 누구나 그들의 이름을 알고 있다. 그들이 첫번째 범용 운영체제, 유닉스 창시자다. 유닉스를 작성하는 동안에 C 로 불리는 프로그래밍 언어도 발명했다. C는 오늘날 용어로 "저수준(low-level)" 언어로 일컸는 유연하고 강력한 프로그래밍 언어다. 저수준 언어는 프로그래머가 소프트웨어와 하드웨어가 상호작용하는 방법에 대한 고수준 제어를 가능하게 한다. 많은 확장과 개선을 겪었고 C언어에 객체지향을 접목한 C++가 가장 눈에 띄지만, C는 여전히 오늘날에도 흔히 사용된다.
 
@@ -46,9 +46,9 @@ subtitle: 서문
 
 유닉스는 표준사양서를 보유하고 있어서 표준사양서에는 유닉스 플랫폼과 호환성을 정의하는 시스템 루틴 집합이 포함되어 있었다. 이 표준을 현재 포식스(POSIX)라고 부른다. 그래서, 다양한 사람들이 성배를 찾기 시작했다. 성배는 POSIX와 호환되지만 AT&T가 제기하는 라이선스 제한에서 자유로운 운영체제다. 그런 개인 중 한 사람이 미닉스(MINIX)로 불리는 학교 프로젝트로 코드를 작성한 네덜란드 컴퓨터과학과 교수가 있다. 또다른 개인은 리누스 토발즈(Linus Torvalds)로 헬싱키 거주 십대 청소년이다. 토발즈는 1991년 첫번째 리눅스 버젼을 출시해서 세상을 바꿨다.
 
-그러는 동안에 MIT 인공지능 연구소 컴퓨터 과학자 리차드 스톨만(Richard Stallman)은 GNU 프로젝트를 시작했다. (GNU는 "GNU's is not UNIX"에 대한 재귀축약어다.) GNU 프로젝트는 유닉스에 대한 무료대안이 되는 운영체제를 만들어 내려고 노력했다. 전체 운영체제는 많은 구성요소가 필요하고 운영체제의 코어는 커널(kernel)로 불린다. 커널은 컴퓨터를 실행하고, 메모리를 관리하고, 프로그램을 실행하고, 주변장치와 다른 하드웨어와 의사소통한다. 전체 운영시스템은 또한 컴파일러, 디버거, 텍스트 편집기, 관리 도구, 사용자 인터페이스 같은 개발 도구를 필요로 한다. 토발즈는 자신이 만든 소프트웨어를 자유로이 이용가능하게 만드는데 동의했다. 토발즈가 작성한 최초 버젼에서 개작되고 향상된 리눅스 커널은 GNU 운영체제 코어가 되었다. 이 운영체제가 이제 흔히 [리눅스(Linux)][2]로 불린다.
+그러는 동안에 MIT 인공지능 연구소 컴퓨터 과학자 리차드 스톨만(Richard Stallman)은 GNU 프로젝트를 시작했다. (GNU는 "GNU's is not UNIX"에 대한 재귀축약어다.) GNU 프로젝트는 유닉스에 대한 무료대안이 되는 운영체제를 만들어 내려고 노력했다. 전체 운영체제는 많은 구성요소가 필요하고 운영체제의 코어는 커널(kernel)로 불린다. 커널은 컴퓨터를 실행하고, 메모리를 관리하고, 프로그램을 실행하고, 주변장치와 다른 하드웨어와 의사소통한다. 전체 운영시스템은 또한 컴파일러, 디버거, 텍스트 편집기, 관리 도구, 사용자 인터페이스 같은 개발 도구를 필요로 한다. 토발즈는 자신이 만든 소프트웨어를 자유로이 이용가능하게 만드는데 동의했다. 토발즈가 작성한 최초 버젼에서 개작되고 향상된 리눅스 커널은 GNU 운영체제 코어가 되었다. 이 운영체제가 이제 흔히 리눅스(Linux)[^2]로 불린다.
 
-    [2]: GNU 프로젝트 사례는 리눅스가 GNU/리눅스 시스템으로 불리는 것이 더 적절하다는 것을 상기시킨다. 하지만, 이런 유형의 "브랜딩(branding)" 문제는 오픈소스 라이선싱에 급속히 확산되고 있다. 15장 상표권을 참조한다.
+[^2]: GNU 프로젝트 사례는 리눅스가 GNU/리눅스 시스템으로 불리는 것이 더 적절하다는 것을 상기시킨다. 하지만, 이런 유형의 "브랜딩(branding)" 문제는 오픈소스 라이선싱에 급속히 확산되고 있다. 15장 상표권을 참조한다.
 
 하지만, 스톨만은 자신이 개발하려는 새롭고 자유로운 운영체제 사유를 막을 수 있는 라이선싱 패러다임 작업에도 병렬로 임하고 있었다. 스톨만은 이 패러다임을 "자유 소프트웨어(free software)"로 칭하고 자유 소프트웨어 규정을 GNU 일반 공중 라이선스(General Public License, GPL)로 불리는 라이선스에 포함했다. 소스코드를 비밀로 감출 수 없는 조건으로 소프트웨어를 재배포할 구속받지 않는 권리를 이 라이선스에 부여했다. 이것이 카피레프트의 전제가 된다. 카피레프트의 전제는 저작권법을 사용해서 저작권 보호를 받을 수 있는 소프트웨어 공유를 강제한다.
 
@@ -68,9 +68,9 @@ subtitle: 서문
 
 ### 여러분께 감사드립니다.
 
-이 책의 교재개발에 많은 분들이 저자를 직간접적으로 도움을 주셨다. 특히, Luis Villa, Alma Chao, Sabir Ibrahim, Maxim Tsotsorin, Aahit Gaba, David Pollak, David Marr, Greta Lichtenbaum, David Ribner 에게 감사의 말씀을 전한다. 이분들 모두 기나긴 원고 저작과 편집 작업에 직접적으로 도움을 주셨다. FSFE Legal Network 모든 회원분께도 감사의 말씀을 전한다 (특히, Matija Suklje 와 Carlo Piani). 이정표가 거의 없던 여행에 저자가 참여하도록 자유 토론에 참석해주시고 지적 문의를 해준신 오픈소스 법세계 모든 분께도 감사의 말씀을 젆나다. 새로운 경로를 [친구][3]와 함께 걸어가는 것은 항상 최고다.
+이 책의 교재개발에 많은 분들이 저자를 직간접적으로 도움을 주셨다. 특히, Luis Villa, Alma Chao, Sabir Ibrahim, Maxim Tsotsorin, Aahit Gaba, David Pollak, David Marr, Greta Lichtenbaum, David Ribner 에게 감사의 말씀을 전한다. 이분들 모두 기나긴 원고 저작과 편집 작업에 직접적으로 도움을 주셨다. FSFE Legal Network 모든 회원분께도 감사의 말씀을 전한다 (특히, Matija Suklje 와 Carlo Piani). 이정표가 거의 없던 여행에 저자가 참여하도록 자유 토론에 참석해주시고 지적 문의를 해준신 오픈소스 법세계 모든 분께도 감사의 말씀을 젆나다. 새로운 경로를 친구[^3]와 함께 걸어가는 것은 항상 최고다.
 
-    [3]: 모든 실수는 저자에게 귀착된다. 이 책의 훌륭한 점만 다른 분들께 가야된다.
+[^3]: 모든 실수는 저자에게 귀착된다. 이 책의 훌륭한 점만 다른 분들께 가야된다.
 
 ### 저자와 연락
 
