@@ -106,7 +106,7 @@ GPL section 6 saying “You may not impose any further restrictions on the recip
 
 [^5]:  [http://people.apache.org/~slive/site/xdocs/licenses/GPL-compatibility.xml](http://people.apache.org/~slive/site/xdocs/licenses/GPL-compatibility.xml)
 
-적어도 위에서 특징적으로 묘사되듯이, 고속특허 라이선스가 묵시적 특허 라이선스를 박탈한다는 FSF 견해가 법률상 피할 수 없는 결과는 아니다; 이 입장은 아마도 객관적인 법률분석에 받대되는 변호가 될 것이다. GPL 7장에 소위 "자유 혹은 죽음" 조항에 비추어, 특허 라이선스 종료 쟁점은 좀더 흥미롭다.
+적어도 위에서 특징적으로 묘사되듯이, 명시적 특허 라이선스가 묵시적 특허 라이선스를 박탈한다는 FSF 견해가 법률상 피할 수 없는 결과는 아니다; 이 입장은 아마도 객관적인 법률분석에 받대되는 변호가 될 것이다. GPL 7장에 소위 "자유 혹은 죽음" 조항에 비추어, 특허 라이선스 종료 쟁점은 좀더 흥미롭다.
 
 ~~~ {.input}  
 If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot distribute so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not distribute the Program at all. 
