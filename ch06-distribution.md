@@ -90,3 +90,46 @@ ond) Contracts, Section 317 참조.
 
 ### FSF 관점
 
+자유소프트웨어재단(Free Software Foundation, FSF)에서 공포한 GPL 2 FAQ에는 카피레프트 요구사항을 촉발하는 배포가 무엇인가에 대한 재단이 생각이 나타나 있다. 예를 들어, FAQ 중 하나는 다음과 같다:
+
+> **Is making and using multiple copies within one organization or company “distribution”?** {.callout}
+>
+> No, in that case the organization is just making the copies for itself. As a consequence, a company or other organization can develop a modified version and install that version through its own facilities, without giving the staff permission to release that modified version to outsiders. 
+> However, when the organization transfers copies to other organizations or individuals, that is distribution. *In particular, providing copies to contractors for use off-site is distribution [emphasis added].*[^17]
+
+
+[^17]: [http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#InternalDistribution](http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#InternalDistribution). 동일한 FAQ가 GPLv3 FAQ에도 나온다([http://www.gnu.org/licenses/gpl-faq.html#InternalDistribution](http://www.gnu.org/licenses/gpl-faq.html#InternalDistribution)).
+
+또한 FAQ는 단체와 과반을 소유한 현지법인 사이 이전도 논의한다:
+
+> **Does moving a copy to a majority-owned, and controlled, subsidiary constitute distribution?** {.callout} 
+> Whether moving a copy to or from this subsidiary constitutes “distribution” is a matter to be decided in each case under the copyright law of the appropriate jurisdiction. The GPL does not and cannot override local laws. US copyright law is not entirely clear on the point, *but appears not to consider this distribution* [emphasis added]. 
+> If, in some country, this is considered distribution, and the subsidiary must receive the right to redistribute the program, that will not make a practical difference. The subsidiary is controlled by the parent company; rights or no rights, it won’t redistribute the program unless the parent company decides to do so. [^18]
+
+[^18]: [http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#DistributeSubsidiary](http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#DistributeSubsidiary). 동일한 FAQ가 GPLv3 FAQ에도 나온다 ([http://www.gnu.org/licenses/gpl-faq.html#DistributeSubsidiary](http://www.gnu.org/licenses/gpl-faq.html#DistributeSubsidiary)).
+
+상기 FAQ에서, FSF는 적어도 미국에서는 과반을 소유하고 과반수 지배하는 현지법인으로 혹은 현지법인으로부터의 이전은 배포를 구성하지 못한다. 더 나아가, FSF는 분석 목적으로 두 독립체가 효과적으로 한 독립체인지를 판단하는데 다른 조직체에 대해서 한 조직체의 효과적인 제어에 가중치를 준다.
+
+기밀유지 협약서(nondisclosure agreement, NDA) 아래 변경된 GPL 코드 제공에 관한 GPL2 FAQ에 논의도 있다.
+
+> **Does the GPL allow me to develop a modified version under a nondisclosure agreement?** {.callout}
+>
+> Yes. For instance, you can accept a contract to develop changes and agree not to release your changes until the client says OK. This is permitted because in this case no GPL-covered code is being distributed under an NDA. 
+> You can also release your changes to the client under the GPL, but agree not to release them to anyone else unless the client says OK. In this case, too, no GPL-covered code is being distributed under an NDA, or under any additional restrictions. 
+> The GPL would give the client the right to redistribute your version. In this scenario, the client will probably choose not to exercise that right, but does have the right.[^19]
+
+[^19]: [http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#DevelopChangesUnderNDA](http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#DevelopChangesUnderNDA). 동일한 FAQ가 GPLv3 FAQ에도 나온다([http://www.gnu.org/licenses/gpl-faq.html# DevelopChangesUnderNDA](http://www.gnu.org/licenses/gpl-faq.html# DevelopChangesUnderNDA)).
+
+많은 회사들이 배포 질문이 혼동스럽다는 것을 발견하는데 이유는 FAQ가 혼동스럽기 때문이다. 상기 FAQ에서, FSF는 두가지 다른 시나리오를 고려한다: (1) 도급업자(contractor)가 변경된 코드를 공중에게 일반적으로 고객쪽을 향해서 출시한다. 그리고 (2) 도급업자는 GPL 아래 고객에게 변경된 코드를 출시하고, 도급업자는 변경된 코드를 그밖의 누구에게도 출시하지 않겠다고 약속한다. 불행하게도, 해당 FAQ 절에는 "변경된 버젼(modified version)"이 도급업자 자신의 GPL 코드 변경을 언급하는지, 고객에 의해서 이미 변경될 수 있는 GPL 코드인지, 제3자 코드의 변경인지 명시하고 있지 않다. 분명하게, 이런 세가지 상황은 다르게 분석될 수 있다. 만약 FAQ에서 언급한 GPL 코드가 고객 혹은 도급업자가 소유한 것이라면, 사소한 질문이 된다; 분명히, GPL 코드 소유자는 적합성을 보고서 GPL 조건 혹은 GPL 조건이 아닌 것으로 코드 전달을 선택할 수 있다. 왜냐하면 (라이선스 허가자로서) 저자는 GPL 카피레프트 준수의무에 구속되어 있지 않다 - 단지 라이선스 피허가자만 구속된다. 만약 FAQ가 제3자 코드에 대한 변경을 언급한다면, 설사 최초 코드 전달이 배포를 구성하고 있다고 하더라도, 해당 배포는 GPL 카피레프트 의무를 촉발하지 않는 것을 암시한다.
+
+FSF에서 공포한 다른 정보는 상기 FAQ 구성요소는 제3자 코드를 다루려는 의도는 없다고 제시하고 있다. 하지만, 단연코 이것이 가장 흔한 상황이다: 회사는 GPL 코드 일부를 사용하고자 하지만 변경이 필요해서, 도급을 전제로 코드를 변경할 전문가를 수소문한다. 사실, 이런 시나리오가 너무 일반적이라 오픈소스 소프트웨어의 장점 중의 하나로 내세워지고 있다. 하지만, 회사는 소프트웨어를 전혀 배포할 계획이 없을 수 있다. 따라서, 만약 코드를 컨설턴트에게 제공하는 것이 카피레프트 요건을 촉발하는 배포가 된다면, 회사는 컨설턴트를 고용하지 않을 것 같다.
+
+FSF 관점은 몇가지 이유로 인해서 문제가 있다. 먼저, 실무적인 문제: 단순히 컨설턴트를 고용하는 회사는 사내개발과 도급개발 사업방식을 구별하지 않는다. 회사는 이런 차이에 기반하여 완전히 다른 GPL 준수 방식과 마주하길 예상하지 않는다. FSF 관점은 사업기대에 위배되기 때문에, 부주위한 사람을 위한 함정이다. 둘째로, 법적 문제: 개발목적으로 코드를 공급하는 것은 일반적인 발행 혹은 재배포의 개념보다는 "원고 콘텐츠를 명확하게 특정된 집단과 제한된 목적을 갖고, 판매, 배포, 복제, 유포의 권리 없이 (즉, 저작권법 아래서 발행이 아님)의사소통하는" 것에 좀더 가깝다. 따라서, 이러한 이전은 법률아래서 배포가 아니라는 강한 주장이 된다.
+
+### 국제적 관점
+
+여기서 분석되는 배포 질문은 대체로 미국법에만 볼 수 있는 독특한 것이라는 점을 명심하는 것이 중요하다. GPL2에는 준거법 선택(choice-of-law) 조항이 없고 조건부 저작권 라이선스이기 때문에, 지방 저작권법을 경유하여 보호되는 것이 좌우된다. 해당 쟁점과 연관된 국제 저작권법의 전체적인 논의는 이번 장 법위밖이지만, 이 질문에 대해서 미국밖에서 다른 대답을 갖을 듯 하다. 
+베른협약(저작권의 국제적 보호를 목적으로 체결된 협약, Berne Convention for the Protection of Literary and Artistic Works)과 WIPO 저작권 조약(WIPO Copyright Treaty)에서 상술한 바에 의하면 문학작품을 "이용가능하게(make available)" 권리를 준비하고 있다. 이것은 배포에 대한 미국 개념보다 더 넓고, 더 중요하는 SAAS 제공도 포함할 수 있다. 따라서, 미국밖에 활동에 기반한 카피레프트 의무준수에 대한 촉발점이 미국내 활동보다 더 낮은 문턱을 의미할 수 있다.
+
+### 계약문서 작성과 거래 구조화(deal structuring)에 대한 모범사례
+
