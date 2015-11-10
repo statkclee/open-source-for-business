@@ -26,7 +26,7 @@ subtitle: 오픈 소스 소프트웨어 라이선싱에 대한 실무 안내서
     4. 장: [라이선스 호환성](ch04-license-compatibility.html)
     5. 장: [조건부 라이선싱](ch05-conditional-licensing.html)
     6. 장: [배포란 무엇인가?](ch06-distribution.html)
-    7. 장: 고지 요구사항
+    7. 장: [고지 요구사항](ch07-notice.html)
 1. 부: 고급 준법 준수
     8. 장: GPL 2 Border Dispute
     9. 장: LGPL 2.1 준법준수
