@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>xwMOOC: 비즈니스를 위한 오픈 소스 소프트웨어</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://statkclee.github.io/swcarpentry-version-5-3-new/css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://xwmooc.net" title="xwMOOC">
+          <img alt="xwMOOC banner" src="img/xwMOOC.png" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1 class="title">비즈니스를 위한 오픈 소스 소프트웨어</h1>
+          <h2 class="subtitle">7장 고지 의무(Notice Requirements)</h2>
+<p>고지와 저작자 표시 의무는 가장 적게 지적으로 도적적인 것 중 하나지만 오픈소스 라이선싱의 가장 중요한 부분이다. 모든 오픈소스 라이선스(가장 방입적인 것부터 가장 강력한 카피레프트까지)는 라이선싱 고지를 요구한다. 액면으로, 이런 의무는 간단하지만, 바이너리 제품에 대한 고지 파일을 생성하려고 시도해본 사람은 그런 파일을 생성하는 것이 도전적이고 좌절감을 줄 수 있다고 증언한다. 그런 간단한 작업이 어떻게 그다지 어려울 수 있을까? 하지만, 한가지 확실하다: 만약 재배포자가 적절한 라이선싱 고지를 사용하지 못하면, 오프소스 라이선스 허가자가 미준수(noncompliance)를 주장하고 증명하는 가장 간단한 경로가 생성된다. 사실, 오픈소스 시행에 관한 소홍 대부분은 고지를 하지 못한 실패에 관한 것이다.</p>
+<h3 id="라이선스-고지란-무엇인가">라이선스 고지란 무엇인가?</h3>
+<p>고지를 전달하는 요건은 고지된 라이선스 아래 이용가능한 특정 오픈소스 소프트웨어가 수령자에게 전달되는 소프트웨어에 포함되어 있다는 것을 단지 수령자에게 알리는 텍스트 파일을 전달하는 요건이다. 때때로, 해당 고지가 또한 시행되는 라이선싱 조건(operative licensing terms)처럼 역할을 하지만, 항상 그런 것은 아니다.</p>
+<p>예를 들어, 만약 제품이 최종 사용자 라이선스 협정(End User License Agreement) 아래 배포되고, BSD 라이선스 아래 이용가능한 제3자 오픈소스 소프트웨어 일부 구성요소를 담고 있다면, 라이선스 허가자는 BSD 라이선스 사본을 소프트웨어 수령자에게 주어야만 된다. 하지만, 소프트웨어 전체로 이런 조건으로 사용허가 되지는 않았다. 실질적으로, 해당 라이선스 고지는 수령자에게 다음을 알려주는 역할을 한다. 수령자는 라이선스 허가자로부터 직접 해당 구성요소에 대한 라이선스를 받았고 또한, 소프트웨어는 이런 조건아래 수령자에게 이용가능할 수 있다. 물론, 방임형 라이선스는 소스코드 전달 요건이 없다. 그래서 수령자는 어디서 소스코드 사본을 얻어야 되는지 알지 못할 수 있다. 그럼에도 불구하고, 수령자는 독립적으로 사본을 찾는 선택을 취할 수도 있다.</p>
+<p>카피레프트 라이선스에 대해서, 라이선스 고지가 라이선스 허가자로부터 직접적으로 수령자에게 소프트웨어가 이러한 라이선스 조건아래 제공된다는 것을 통지하는 역할을 한다. 혹은 모질라 공중 라이선스 혹은 이클립스 공중 라이선스 같은 약한 카피레프트 라이선스 경우에는 소스코드가 이런 조건으로 이용가능하다는 것을 통지하는 역할을 한다. GPL과 LGPL 라이선스 경우에는, 바이너리가 이런 조건으로만 제공되어야만 된다. 따라서 라이선스가 소프트웨어에 대해서 시행되는 라이선싱 조건으로 역할을 한다.</p>
+<p>대부분의 라이선스는 Copyright 2015 XYZ, Inc. 같은 저작권 고지를 포함한다. 저작권 고지는 통상 라이선스 상단에 위치하지만, 일부 오픈소스 저자는 저작권 고지를 빼먹는다. 라이선스 고지는 제공된 것을 다시 재현하게 만든다 - 그이상도, 그이하도 아니다.</p>
+<h3 id="라이선스-고지-생성하는-방법">라이선스 고지 생성하는 방법</h3>
+<p>똑같은 라이선스 고지 형태를 생성하는 것이 도전적일 수도 있다. 거의 모든 오픈소스 라이선스는 단지 라이선스 텍스트 파일을 전달할 것만 요구한다. 일반적으로, 라이선스 고지는 일반 텍스트 형태로 전달된다.</p>
+<p>다른 라이선스는 다른 상황에서 고지 사항을 전달할 것을 요구한다. 다음에 일부 사례가 있다:</p>
+<ul>
+<li><strong>MIT.</strong> “The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.”</li>
+<li><strong>BSD.</strong> “Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.”</li>
+<li><strong>GPL 2:1.</strong> “You may copy and distribute verbatim copies of the Program’s source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice and disclaimer of warranty; keep intact all the notices that refer to this License and to the absence of any warranty; and give any other recipients of the Program a copy of this License along with the Program.”</li>
+<li><strong>Apache 2.</strong> “(1) You must give any other recipients of the Work or Derivative Works a copy of this License … (3) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and (4) If the Work includes a”NOTICE&quot; text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.</li>
+</ul>
+<p>이러한 요건에 변형이 있다. 예를 들어, BSD 라이선스 일부 형태는 소스코드만 하고, 바이너리에는 라이선스 고지 전달을 요건으로 하지 않는다.</p>
+<p>하지만, 한 제품은 종종 많은 오픈소스 컴포넌트로 구성되기 때문에, 모든 라이선스에 대해서 다른 라이선스 고지 프로세스가 있으면 관리될 수 없다. 따라서, 오픈소스 고지 요건을 준수코져하는 회사 대부분은 가장 엄격한 일반적인 고지 요건에 대해서 일관성을 유지하는 방식으로 고지의무에 대비하는 내부 프로세스를 전개해 나간다; 여기서 GPL이 일반적으로 가장 엄격한 모형이다.</p>
+<p>고지요건이 거의 항상 라이선스 전체 사본을 전달을 요구하고 있다. 일부 라이선스는 축약된 고지 형태도 허락한다. 하지만, 다른 라이선스에 대해 다른 내부 프로세스를 구현하는 것이 실무적이지 못하다. 그래서 대부분의 회사는 요건이 되든 되지않던 관계없이, 모든 오픈소스 라이선스에 대해서 완전한 라이선스 사본을 제공한다.</p>
+<p>만약 소프트웨어 제품이 소스코드 형태로 전달되면, 고지사항이 통상 “내장되어 있다(baked-in)”. 만약 개발자가 제품개발을 위해서 오픈소스 컴포넌트를 다운로드하면, 라이선스 파일은 보통 <em>license.txt</em> 혹은 <em>copying.txt</em>로 불리는 텍스트 파일에 담겨있다. <em>license.txt</em> 혹은 <em>copying.txt</em> 파일은 소스코드와 함께 다운로드된 팩키지에 포함된다. 만약 개발자가 단순히 제품과 함께 소스코드 모든 파일을 재배포한다면, 별도 라이선스 고지사항을 생성할 필요는 없다. 이것이 가장 쉽고 최선의 접근법이 된다.</p>
+<p>하지만, 많은 회사는 앞서서 소스코드 전달을 원치 않는다. 이에 대해서는 많은 사유가 있다. 종종, 소스코드를 전달하는 것이 비현실적이다. 일부 경우에는, BSD 혹은 MIT 같은 방임라이선스처럼 라이선스 자체에서 요구하지 않으면, 회사가 소스코드를 전달하는 것에 반대한다. 라이선스가 소스코드를 전달할 조건을 부과하지 않으면, 전달하지 않는 것은 요건이 아니라 선택이다. GPL과 LGPL같은 카피레프트 라이선스와 모질라 공중 라이선스 같은 약형 카피레프트 라이선스의 경우에, 모든 바이너리에 대해서 소스 코드를 넘기는 요건은 없다. 하지만, 수령자에게 소스코드가 카피레프트 라이선스 조건아래 이용가능하다고 알릴 요건은 있다. 그런 경우에 개발자는 바이너리에 앞서 소스코드를 포함할지 혹은 포함하지 않을지 선택권이 있다. 하지만, 개발자가 그렇게 하지 않기로 선택할 때, 별도 고지 파일을 준비해야만 한다. 회사에 상당한 스트레스를 일으키는 것이 바로 이런 추가 라이선싱 고지 파일을 생성이다.</p>
+<p>따라서, 가장 쉬고 최선의 실무 업무방식은 앞서 소스코드를 공개하는 것이다. 이 방식이 라이선싱 고지에 대비하는 작업을 경감하거나 없앨 뿐만 아니라, 카피레프트 라이선스 아래 이용가능하게 만들어야 하는 소스코드에 대한 요건, 비준수로 귀결되는 실패를 모면하게 한다.</p>
+<p>만약 제품이 하드웨어 제품이고, 그리고 만약 소프트웨어가 내장되거나 사용자 인터페이스가 없다면, 고지사항 전달이 특히 어려울 수 있다. 지속적으로 회사는 제품 배포 대신에 인터넷을 경유해서 고지사항을 전달할 수 있어야 된다고 주장하고 있다. 불행하게도, 그 방식이 편리한 해결책일 수 있지만, 대부분의 오픈소스 라이선스에 대한 고지 요건을 준수하지 못한다. 거의 항상 오픈소스 라이선스는 라이선스 전체 사본이 제품과 함께 전달되도록 요구하고 있다. 만약 제품이 소프트웨어 제품이라면, 대체로 고지 파일이 제품에 다운로드되어 있거나 CD-ROM 같은 배포 매체에 존재함을 의미한다. 만약 제품이 하드웨어 제품이라면, 고지사항을 표시할 적절한 사용자 상호작용 화면이 없다. 그리고 설사 화면이 있더라도, 작은 화면을 통해서 고지사항을 읽게 되면 유쾌하지는 못하다. 역설적으로, 상식적으로 사용자에게 도움이 되는 것은 아니지만, 이것이 통상적인 준수방식이다. 예를 들어, 스마트폰을 갖고 있다면, 아마도 쉽게 스마트폰 속에 오픈소스 라이선스 고지를 찾을 수 있다. 하지만, 매우 작은 화면에 수백쪽 고지사항을 일일이 읽는 것이 매우 어렵다는 것을 알게된다. 일리가 없지는 않지만, 회사가 종종 고지사항을 좀더 소화가 가능한 형식으로 제공할 수 있는 웹페이지로 사용자를 안내하는 것이 더 낫다고 주장한다. 불행히도, 이 방식은 대부분의 라이선스가 요구하는 것이 아니다.</p>
+<p>(오픈소스 라이선스가 거의 항상 기꺼이 온라인에 이용가능하더라도) 온라인 고지를 허용하지 않고 전체 라이선스 복제를 요건으로 하는 숨어있는 이론은 대부분의 라이선스가 최초 작성될 때, 대부분의 사람이 인터넷 접속을 못했다. 물론, 21세기에 인터넷 접속은 어디서든지 된다. 그래서 전체 라이선스 사본을 전달하는 원래 요건에 대한 사유는 시대에 뒤떨어질 수 있지만, 오픈소스 조건은 변치 않는다. 따라서, 앞으로 오랜동안 상당한 유산 코드(legacy code)는 고지사항을 라이선스로 배포하는데, 현대 기술을 활용하지 못하는 방식으로 배포될 것이다.</p>
+<p>인터넷을 경유해서 라이선싱 고지를 전달하는 것이 아마도 준수하는 것으로 판단되는 일리가 있는 경우가 하나 있다. 이것은 인터넷 제품에 대한 라이선싱 고지를 전달할 때다. 예를 들어, 소스코드 형태로 사용자 브라우져에서 실행되는 언어인 자바스크립트는 흔히 SAAS와 웹서버와 연결되어 배포된다. 상당한 자바스크립트는 오픈소스 라이선스를 따른다. 자바스크립트를 웹브라우져를 경유해서 쏟아 낼 때, 사용자가 가서 라이선싱 고지를 찾을 수 있는 링크를 제공하는 것이 합리적이다. 그런 경우에, 만약 사용자가 링크에 접속할 수 없다면, 자바스크립트는 아마도 사용자에게 배포될 수 없다. 설사 이 방법이 오픈소스 고지 요건의 문자를 준수하건 준수하지 않건, 정신에는 부합된다.</p>
+<p>유사한 극단적 사례가 인터넷 연결에만 동작하는 기기에 대해서 존재할 수 있다. 특히 사용자 인터페이스를 갖지 않는 기기가 그렇다. 이런 경우, 웹링크를 경유해서 고지를 전달하는 것이 종이위에 고지 혹은 CD-ROM 같은 전자매체에 고지를 전달하는 대안일 수 있다. 종이나 CD-ROM 모두 고지를 전달하기에 매우 비싸다.</p>
+<p>마지막으로, 회사가 고지 전달에 대한 절차를 결정하고 나면, 고지사항을 최신정보로 갱신하도록 신경써야 된다. 제품에 들어가는 오픈소스 컴포넌트가 시간이 흐름에 따라 변경되면, 고지사항도 갱신되어야 된다. 불행하게도, 구식 라이선스 고지가 매우 일반적이다.</p>
+<h3 id="출처-표시attribution와-광고-요건">출처 표시(attribution)와 광고 요건</h3>
+<p>일부 오픈소스 라이선스는 좀더 골치아픈 고지 요건을 갖고 있다. 예를 들어 “사용자 매뉴얼에(in the user manual)” 고지사항을 전달하는 요건으로 20년 전에는 의미가 있으나, 별도 사용자 매뉴얼 생성이 매년 인기가 없어지는 요즘은 아니다. 추가적으로, 일부 라이선스에는 소위 “광고 요건(advertising requirements”을 담고 있다. 아파치 1.0 3절에 다음 조항이 담겨있다:</p>
+<blockquote>
+<p>{.callout} The end-user documentation included with the redistribution, if any, must include the following acknowledgment: “This product includes software developed by the Apache Software Foundation (www.apache.org). Alternately, this acknowledgment may appear in the software itself, if and wherever such third-party acknowledgments normally appear.”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+</blockquote>
+<p>구현하기 어렵고 비용이 많이 들 뿐만 아니라 GPL과 호화되지 않기 때문에, 이런 유형의 “광고 요건”은 사용되지 않고 사라지고 있다.</p>
+<p>이런 라이선스로 여전히 사용되는 유명한 소프트웨어가 OpenSSL이다. OpenSSL 3절에 다음과 같이 언급하고 있다.</p>
+<blockquote>
+<p>{.callout} All advertising materials mentioning features or use of this software must display the following acknowledgment:</p>
+<pre><code>&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (www.openssl.org)&quot;[^2]</code></pre>
+</blockquote>
+<p>이와 같은 요건은 해석하기 어려울 수 있다. 무엇이 광고물(advertising material)을 구성하는가? 제품이 SSL과 호환된다는 공증을 표시하는 어떤 제품도 이 정의를 충족하는가? “기능(feature”를 언급한다는 것은 어떤 의미인가? OpenSSL처럼 다른 구현방법으로 프로토콜(SSL)을 구현하는 팩키지의 경우에, 이런 요건은 SSL을 언급함으로써 혹은 OpenSSL 구현에만 특정된 기능을 언급함으로써 촉발되는가? 이와 같은 조항은 대중적이 못하고 오픈소스 라이선싱에서 모범사례는 아닌데 이유는 모호함과 빠른 노후화 때문이다.</p>
+<h3 id="증서-변경noting-modification">증서 변경(Noting Modification)</h3>
+<p>오픈소스 라이선스의 일부 고지 요건은 흔히 생각되지 않는다. 예를 들어, 많은 오픈소스 라이선스가 개발자로 하여금 변경사항을 언급하도록 하고 있다. 예를 들어, GPL 버젼 2에서 “You must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.” 실무에서는 단지 변경을 기술하는 것이 아니라 이름과 날짜만이 요구된다.</p>
+<p>일부 다른 라이선스는 다르고 좀더 폭 넓은 변경 고지 요건을 갖고 있다. 이런 요건이 액면으로 힘겨울 수 있다; 라이선스 요건과 관계없이, 역사적으로 좋은 프로그래밍 습관으로 여겨지는 것이다. 하지만, 오늘날 소프트웨어 변경에 관한 대부분의 정보는 소스코드 주석보다는 병행 버젼관리 시스템(concurrent versioning system)에 메타데이터로 저장된다. 그래서 고지 요건으로 이를 포함하는 것이 엔지니어 사이에 인기가 없다.</p>
+<h3 id="자동화">자동화</h3>
+<p>고지 생성이라는 단호한 작업에 좋은 소식이 있다. 분명히, 이쪽은 자동화가 무르익은 영역이다. 일부 빌드 시스템 (데비안 리눅스와 안드로이드 시스템)은 고지 파일에 대한 정보 수집을 돕은 기능을 담고 있다. Black Duck Software 혹은 Palamida 같은 코드 스캐너로 생성된 보고서는 흔히 라이선스 고지에 대해서 도태시킬 수 있다.</p>
+<p>주로 고지 전달을 다루려는 목적은 아니지만, SPDX(Software Package Data Exchange) 프로젝트도 라이선싱 정보 전달의 자동화를 돕겠다고 약속하고 있다. SPDX 프로젝트는 리눅스 재단 신의 방패 아래 추진되고 있다. 이 책을 집필하는 시점에, 사양서 2.0이 작업중에 있었고, 번역하는 시점에는 2.0이 출시되었다. <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> SPDX는 라이선싱 정보를 의사소통하는데 사용되는 표준화된 형식이다. SPDX는 최종 사용자를 위한 고지 파일을 생성하고 검사하는데 유용한 라이선싱에 관한 흥미로운 정보를 담고 있지만, 주로 공급망(A 개발자에서 B개발자로)에 대한 정보 전달 문제를 다루려는 의도로 기획되었다.이것은 고지관련 범위를 넘어서고 심지어 SPDX 프로젝트 조차도 넘어서는 사안이다. 현재 SPDX가 위치한 것처럼, 오픈소스 소프트웨어를 상업용으로 사용하는 사용자는 상당한 노력을 공급망 모든 단계에서 정보공개하는데 소모하고 있다. (이것에 대한 자세한 정보는 17장: 인수 합병과 기타 거래 참조).</p>
+<p>David Marr는 이 사안을 다음과 같이 유창하게 기술하고 있다.</p>
+<blockquote>
+<p>{.callout} 소프트웨어를 생성한 첫번째 소프트웨어 개발자로부터 쭉 내려가서 최종 사용자에게 팔리는 최종 포장 제품까지 FOSS는 거의 모든 공급망에 존재한다. 하지만, 상업적 공급망 맥락에서, 현재 FOSS 생태계는 망가졌다. 소프트웨어가 공급망을 따라 흐르듯이, 공급망을 강과 비교하면, 즉, 소프트웨어가 한 회사에서 다른 회사로 전달될 때, 각 하위단에 위치한 회사는 상위 회사가 이미 작업한 준수작업 부분을 재작업하는 하게 된다. 이 모든 것이 불필요한 비용이고 비효율로 작용해서, 흔히 적기에 시장출시를 지연시킨다.</p>
+</blockquote>
+<p>물론 라이선스 고지를 전달하는 도전과제와 라이선싱 정보를 전달하는 도전과제는 관련있다. 라이선스 고지는 모든 배포에 대한 요건이다. 그리고 라이선스 고지는 공급망 내에서 모든 중간 배포를 포함한다. 그래서, 공급망에 모든 공급사는 라이선스 고지를 전달에 적용가능한 오픈소스 라이선스에 대한 의무가 있고, 고객에게 라이선싱 핵심 정보를 전달할 사업상 필요성이 있다. 설사 하나는 라이선스 준수 사안이고, 다른 하나는 정보관리 사안이지만, 이런 사한에 대한 해결책이 표준화된 준수 프로세스에 딱 들어 맞는다.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://www.apache.org/licenses/LICENSE-1.1" class="uri">http://www.apache.org/licenses/LICENSE-1.1</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="http://spdx.org/about-spdx" class="uri">http://spdx.org/about-spdx</a><a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label swc-blue-bg" href="http://xwmooc.net">xwMOOC</a>
+        <a class="label swc-blue-bg" href="https://github.com/statkclee/open-source-for-business">한글소스</a>
+        <a class="label swc-blue-bg" href="mailto:i@xwmooc.net">Contact</a>
+        <a class="label swc-blue-bg" href="./LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>
