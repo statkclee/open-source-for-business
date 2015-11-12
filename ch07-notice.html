@@ -57,13 +57,15 @@
 <h3 id="출처-표시attribution와-광고-요건">출처 표시(attribution)와 광고 요건</h3>
 <p>일부 오픈소스 라이선스는 좀더 골치아픈 고지 요건을 갖고 있다. 예를 들어 “사용자 매뉴얼에(in the user manual)” 고지사항을 전달하는 요건으로 20년 전에는 의미가 있으나, 별도 사용자 매뉴얼 생성이 매년 인기가 없어지는 요즘은 아니다. 추가적으로, 일부 라이선스에는 소위 “광고 요건(advertising requirements”을 담고 있다. 아파치 1.0 3절에 다음 조항이 담겨있다:</p>
 <blockquote>
-<p>{.callout} The end-user documentation included with the redistribution, if any, must include the following acknowledgment: “This product includes software developed by the Apache Software Foundation (www.apache.org). Alternately, this acknowledgment may appear in the software itself, if and wherever such third-party acknowledgments normally appear.”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>The end-user documentation included with the redistribution, if any, must include the following acknowledgment: “This product includes software developed by the Apache Software Foundation (www.apache.org). Alternately, this acknowledgment may appear in the software itself, if and wherever such third-party acknowledgments normally appear.”<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 </blockquote>
 <p>구현하기 어렵고 비용이 많이 들 뿐만 아니라 GPL과 호화되지 않기 때문에, 이런 유형의 “광고 요건”은 사용되지 않고 사라지고 있다.</p>
 <p>이런 라이선스로 여전히 사용되는 유명한 소프트웨어가 OpenSSL이다. OpenSSL 3절에 다음과 같이 언급하고 있다.</p>
 <blockquote>
-<p>{.callout} All advertising materials mentioning features or use of this software must display the following acknowledgment:</p>
-<pre><code>&quot;This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (www.openssl.org)&quot;[^2]</code></pre>
+<p>All advertising materials mentioning features or use of this software must display the following acknowledgment:</p>
+<blockquote>
+<p>“This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (www.openssl.org)”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+</blockquote>
 </blockquote>
 <p>이와 같은 요건은 해석하기 어려울 수 있다. 무엇이 광고물(advertising material)을 구성하는가? 제품이 SSL과 호환된다는 공증을 표시하는 어떤 제품도 이 정의를 충족하는가? “기능(feature”를 언급한다는 것은 어떤 의미인가? OpenSSL처럼 다른 구현방법으로 프로토콜(SSL)을 구현하는 팩키지의 경우에, 이런 요건은 SSL을 언급함으로써 혹은 OpenSSL 구현에만 특정된 기능을 언급함으로써 촉발되는가? 이와 같은 조항은 대중적이 못하고 오픈소스 라이선싱에서 모범사례는 아닌데 이유는 모호함과 빠른 노후화 때문이다.</p>
 <h3 id="증서-변경noting-modification">증서 변경(Noting Modification)</h3>
@@ -71,17 +73,18 @@
 <p>일부 다른 라이선스는 다르고 좀더 폭 넓은 변경 고지 요건을 갖고 있다. 이런 요건이 액면으로 힘겨울 수 있다; 라이선스 요건과 관계없이, 역사적으로 좋은 프로그래밍 습관으로 여겨지는 것이다. 하지만, 오늘날 소프트웨어 변경에 관한 대부분의 정보는 소스코드 주석보다는 병행 버젼관리 시스템(concurrent versioning system)에 메타데이터로 저장된다. 그래서 고지 요건으로 이를 포함하는 것이 엔지니어 사이에 인기가 없다.</p>
 <h3 id="자동화">자동화</h3>
 <p>고지 생성이라는 단호한 작업에 좋은 소식이 있다. 분명히, 이쪽은 자동화가 무르익은 영역이다. 일부 빌드 시스템 (데비안 리눅스와 안드로이드 시스템)은 고지 파일에 대한 정보 수집을 돕은 기능을 담고 있다. Black Duck Software 혹은 Palamida 같은 코드 스캐너로 생성된 보고서는 흔히 라이선스 고지에 대해서 도태시킬 수 있다.</p>
-<p>주로 고지 전달을 다루려는 목적은 아니지만, SPDX(Software Package Data Exchange) 프로젝트도 라이선싱 정보 전달의 자동화를 돕겠다고 약속하고 있다. SPDX 프로젝트는 리눅스 재단 신의 방패 아래 추진되고 있다. 이 책을 집필하는 시점에, 사양서 2.0이 작업중에 있었고, 번역하는 시점에는 2.0이 출시되었다. <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> SPDX는 라이선싱 정보를 의사소통하는데 사용되는 표준화된 형식이다. SPDX는 최종 사용자를 위한 고지 파일을 생성하고 검사하는데 유용한 라이선싱에 관한 흥미로운 정보를 담고 있지만, 주로 공급망(A 개발자에서 B개발자로)에 대한 정보 전달 문제를 다루려는 의도로 기획되었다.이것은 고지관련 범위를 넘어서고 심지어 SPDX 프로젝트 조차도 넘어서는 사안이다. 현재 SPDX가 위치한 것처럼, 오픈소스 소프트웨어를 상업용으로 사용하는 사용자는 상당한 노력을 공급망 모든 단계에서 정보공개하는데 소모하고 있다. (이것에 대한 자세한 정보는 17장: 인수 합병과 기타 거래 참조).</p>
+<p>주로 고지 전달을 다루려는 목적은 아니지만, SPDX(Software Package Data Exchange) 프로젝트도 라이선싱 정보 전달의 자동화를 돕겠다고 약속하고 있다. SPDX 프로젝트는 리눅스 재단 신의 방패 아래 추진되고 있다. 이 책을 집필하는 시점에, 사양서 2.0이 작업중에 있었고, 번역하는 시점에는 2.0이 출시되었다. <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> SPDX는 라이선싱 정보를 의사소통하는데 사용되는 표준화된 형식이다. SPDX는 최종 사용자를 위한 고지 파일을 생성하고 검사하는데 유용한 라이선싱에 관한 흥미로운 정보를 담고 있지만, 주로 공급망(A 개발자에서 B개발자로)에 대한 정보 전달 문제를 다루려는 의도로 기획되었다.이것은 고지관련 범위를 넘어서고 심지어 SPDX 프로젝트 조차도 넘어서는 사안이다. 현재 SPDX가 위치한 것처럼, 오픈소스 소프트웨어를 상업용으로 사용하는 사용자는 상당한 노력을 공급망 모든 단계에서 정보공개하는데 소모하고 있다. (이것에 대한 자세한 정보는 17장: 인수 합병과 기타 거래 참조).</p>
 <p>David Marr는 이 사안을 다음과 같이 유창하게 기술하고 있다.</p>
 <blockquote>
-<p>{.callout} 소프트웨어를 생성한 첫번째 소프트웨어 개발자로부터 쭉 내려가서 최종 사용자에게 팔리는 최종 포장 제품까지 FOSS는 거의 모든 공급망에 존재한다. 하지만, 상업적 공급망 맥락에서, 현재 FOSS 생태계는 망가졌다. 소프트웨어가 공급망을 따라 흐르듯이, 공급망을 강과 비교하면, 즉, 소프트웨어가 한 회사에서 다른 회사로 전달될 때, 각 하위단에 위치한 회사는 상위 회사가 이미 작업한 준수작업 부분을 재작업하는 하게 된다. 이 모든 것이 불필요한 비용이고 비효율로 작용해서, 흔히 적기에 시장출시를 지연시킨다.</p>
+<p>소프트웨어를 생성한 첫번째 소프트웨어 개발자로부터 쭉 내려가서 최종 사용자에게 팔리는 최종 포장 제품까지 FOSS는 거의 모든 공급망에 존재한다. 하지만, 상업적 공급망 맥락에서, 현재 FOSS 생태계는 망가졌다. 소프트웨어가 공급망을 따라 흐르듯이, 공급망을 강과 비교하면, 즉, 소프트웨어가 한 회사에서 다른 회사로 전달될 때, 각 하위단에 위치한 회사는 상위 회사가 이미 작업한 준수작업 부분을 재작업하는 하게 된다. 이 모든 것이 불필요한 비용이고 비효율로 작용해서, 흔히 적기에 시장출시를 지연시킨다.</p>
 </blockquote>
 <p>물론 라이선스 고지를 전달하는 도전과제와 라이선싱 정보를 전달하는 도전과제는 관련있다. 라이선스 고지는 모든 배포에 대한 요건이다. 그리고 라이선스 고지는 공급망 내에서 모든 중간 배포를 포함한다. 그래서, 공급망에 모든 공급사는 라이선스 고지를 전달에 적용가능한 오픈소스 라이선스에 대한 의무가 있고, 고객에게 라이선싱 핵심 정보를 전달할 사업상 필요성이 있다. 설사 하나는 라이선스 준수 사안이고, 다른 하나는 정보관리 사안이지만, 이런 사한에 대한 해결책이 표준화된 준수 프로세스에 딱 들어 맞는다.</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p><a href="http://www.apache.org/licenses/LICENSE-1.1" class="uri">http://www.apache.org/licenses/LICENSE-1.1</a><a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p><a href="http://spdx.org/about-spdx" class="uri">http://spdx.org/about-spdx</a><a href="#fnref2">↩</a></p></li>
+<li id="fn2"><p><a href="http://www.openssl.org/source/license.html" class="uri">http://www.openssl.org/source/license.html</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="http://spdx.org/about-spdx" class="uri">http://spdx.org/about-spdx</a><a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
         </div>

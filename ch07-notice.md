@@ -54,7 +54,6 @@ third-party notices normally appear. The contents of the NOTICE file are for inf
 
 일부 오픈소스 라이선스는 좀더 골치아픈 고지 요건을 갖고 있다. 예를 들어 "사용자 매뉴얼에(in the user manual)" 고지사항을 전달하는 요건으로 20년 전에는 의미가 있으나, 별도 사용자 매뉴얼 생성이 매년 인기가 없어지는 요즘은 아니다. 추가적으로, 일부 라이선스에는 소위 "광고 요건(advertising requirements"을 담고 있다. 아파치 1.0 3절에 다음 조항이 담겨있다:
 
-> {.callout}
 > The end-user documentation included with the redistribution, if any, must include the following acknowledgment: "This product 
 includes software developed by the Apache Software Foundation (www.apache.org). Alternately, this acknowledgment may appear 
 in the software itself, if and wherever such third-party acknowledgments normally appear."[^1]
@@ -65,10 +64,9 @@ in the software itself, if and wherever such third-party acknowledgments normall
 
 이런 라이선스로 여전히 사용되는 유명한 소프트웨어가 OpenSSL이다. OpenSSL 3절에 다음과 같이 언급하고 있다.
 
-> {.callout}
 > All advertising materials mentioning features or use of this software must display the following acknowledgment:  
 >
->     "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (www.openssl.org)"[^2]
+> > "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (www.openssl.org)"[^2]
 
 
 [^2]: [http://www.openssl.org/source/license.html](http://www.openssl.org/source/license.html)
@@ -89,7 +87,6 @@ in the software itself, if and wherever such third-party acknowledgments normall
 
 David Marr는 이 사안을 다음과 같이 유창하게 기술하고 있다.
 
-> {.callout}
 > 소프트웨어를 생성한 첫번째 소프트웨어 개발자로부터 쭉 내려가서 최종 사용자에게 팔리는 최종 포장 제품까지 FOSS는 거의 모든 공급망에 존재한다. 하지만, 상업적 공급망 맥락에서, 현재 FOSS 생태계는 망가졌다. 소프트웨어가 공급망을 따라 흐르듯이, 공급망을 강과 비교하면, 즉,  소프트웨어가 한 회사에서 다른 회사로 전달될 때, 각 하위단에 위치한 회사는 상위 회사가 이미 작업한 준수작업 부분을 재작업하는 하게 된다. 이 모든 것이 불필요한 비용이고 비효율로 작용해서, 흔히 적기에 시장출시를 지연시킨다.
 
 [^3]: [http://spdx.org/about-spdx](http://spdx.org/about-spdx)
