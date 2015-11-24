@@ -140,21 +140,39 @@ Electronic Frontier Foundation, Software Freedom Law Center 같은 조직은 종
 
 명시적 특허부여가 부재하더라도, 모든 오픈소스 라이선스는 암묵적으로, 일부 특허권을 부여한다.  *묵시적 실시권(implied license)* 이론에 대한 판례법은 모호하고 별로 없다. 특허 소유자가 소프트웨어에 대한 저작권 라이선스를 부여하고 나서, 이미 사용허락된 활동에 관여한 것에 대해 특허침해로 라이선스 피허가자를 고소하는 것이 불공정하다는 전제에 법적이론이 기반하고 있다. 
 
-사실상 묵시적 실시권은 몇가지 법적 이론의 모방작품이다; 법적 금반언( legal estoppel), 공정한 금반언(equitable estoppel), 특허권 소진(patent exhaustion) (혹은 *최초판매(first sale) 원칙*).[^11] 이런 질문에 대한 판례법 정독은 도전적일 수 있지만, 법원이 불공평한 결과를 회피하려고 역추론을 한다는 점과 잘못된 것을 옳게하는 이론을 식별하는데 걱정을 덜려는 점을 명심하는게 도움이 될 수 있다. *Wang Lab. v. Mitsubishi Elecs. Am.*, 103 F.3d 1571 (Fed. Cir. 1997) 판례에서, 연방 특별 행정 고등 법원은 법적 금반언 아래, 라이선스 허가자는 이미 라이선스 피허가자에 부여한 권리를 강탈하는 특허침해청구주장을 사용할 없다고 판시했다. *공정한 금반언(equitable estoppel)*은 라이선스 피허가자로 하여금 라이선스 허가자의 법적조치를 믿을 수 있도록 한다. 라이선스 피허가자로 하여금 합리적으로 라이선스 피허가자가 특허에 대한 라이선스를 갖도록 믿도록 만드는 법적조치다. [^12] 이 이론에 대한 근본은 오래되었다.[^13] 하지만, 소프트웨어에 적용은 너무 새로워서 묵시적 실시권 범위에 명확한 선을 그을 수 없다. 예를 들어, 연방 특별 행정 고등 법원은 "일반적으로 판매자가 제한 없이 제품을 판매한다면, 사실상 가격에 대한 교환댓가로 구매한 제품을 전체적으로 향유할 만족을 방해하지 않겠다는 약속을 구매자에게 한 것이다"라고 언급했다.[^14]
+사실상 묵시적 실시권은 몇가지 법적 이론의 모방작품이다; 법적 금반언( legal estoppel), 공정한 금반언(equitable estoppel), 특허권 소진(patent exhaustion) (혹은 *최초판매(first sale) 원칙*).[^11] 이런 질문에 대한 판례법 정독은 도전적일 수 있지만, 법원이 불공평한 결과를 회피하려고 역추론을 한다는 점과 잘못된 것을 옳게하는 이론을 식별하는데 걱정을 덜려는 점을 명심하는게 도움이 될 수 있다. *Wang Lab. v. Mitsubishi Elecs. Am.*, 103 F.3d 1571 (Fed. Cir. 1997) 판례에서, 연방 특별 행정 고등 법원은 법적 금반언 아래, 라이선스 허가자는 이미 라이선스 피허가자에 부여한 권리를 강탈하는 특허침해청구주장을 사용할 없다고 판시했다. *공정한 금반언(equitable estoppel)*은 라이선스 피허가자로 하여금 라이선스 허가자의 법적조치를 믿을 수 있도록 한다. 라이선스 피허가자로 하여금 합리적으로 라이선스 피허가자가 특허에 대한 라이선스를 갖도록 믿도록 만드는 법적조치다. [^12] 이 이론에 대한 근본은 오래되었다.[^13] 하지만, 소프트웨어에 적용은 너무 새로워서 묵시적 실시권 범위에 명확한 선을 그을 수 없다. 예를 들어, 연방 특별 행정 고등 법원은 "일반적으로 판매자가 제한 없이 제품을 판매한다면, 사실상 가격에 대한 교환댓가로 구매한 제품을 전체적으로 향유할 만족을 방해하지 않겠다는 약속을 구매자에게 한 것이다.
+구매자는 판매자의 어떤 특허에 대해서도 묵시적 실시권을 보유한다. 판매자의 어떤 특허도 제품이나 당사자가 합리적으로 심사숙고하여 제품이 놓여질 곳에 어떠한 제품의 사용에 대해서도 우선하게 된다."라고 언급했다.[^14] 오픈소스 라이선싱이 "제한없음(without restriction)"은 사실이지만, 이 사례는 소프트웨어 관한 것이 아니다. 일반적으로 어떤 가격도 오픈소스 라이선스로 지불되지 않는다.
 
 [^11]: Nimmer & Dodd, *Modern Licensing Law*, §§4:2–4:3 (2007). David B. Kagan은 투지있게 다음 논문에서 이론을 조화롭게 만들고자 했다: "Honey, I Shrunk the Patent Rights: How Implied Licenses
-and the Exhaustion Doctrine Limit Patent and Licensing Strategies," [http://www.lesusacanada.org/
-docs/hts/exhaustion-and-implied-license-paper-for-les-aerospace.pdf](http://www.lesusacanada.org/
-docs/hts/exhaustion-and-implied-license-paper-for-les-aerospace.pdf).
+and the Exhaustion Doctrine Limit Patent and Licensing Strategies," [http://www.lesusacanada.org/docs/hts/exhaustion-and-implied-license-paper-for-les-aerospace.pdf](http://www.lesusacanada.org/docs/hts/exhaustion-and-implied-license-paper-for-les-aerospace.pdf).
 
 [^12]: 좀더 구체적인 논의에 대해서는 "Potential Defenses of Implied Patent License Under the
-GPL" by Adam Pugh and Laura A. Majerus을 참조한다. [http://www.fenwick.com/FenwickDocuments/
-potential_defenses.pdf](http://www.fenwick.com/FenwickDocuments/
-potential_defenses.pdf) 다운로드 가능하다.
+GPL" by Adam Pugh and Laura A. Majerus을 참조한다. [http://www.fenwick.com/FenwickDocuments/potential_defenses.pdf](http://www.fenwick.com/FenwickDocuments/potential_defenses.pdf) 다운로드 가능하다.
 
 [^13]: "특허 소유자에 의해서 사용된 어떤 언어, 혹은 특허 사용자가 특허 사용에 동의함을 다른 사람이 적절하게 유추할 수 있는 다른 이에게 노출된 어떤 행동도 ... 라이선스를 구성한다." *De Forest Radio*, 273 US 236 (1927) 참조. 
 
 [^14]: *Hewlett-Packard Co. v. Repeat-O-Type Stencil Mfg. Corp., Inc.*, 123 F.3d 1445 (Fed. Cir. 1997).
+
+공정한 금반언(equitable estoppel)에 의한 묵시적 라이선스를 회피하려면, 특허 보유자는 별도 특허 라이선스가 필요하다는 점을 의사소통할 수 있어야 한다. 오픈소스 라이선싱에서 이런 행동은 도전적일 수 있는데 이유는 오픈소스 라이선스가 어떤 권리에 대한 유보도 포함하고 있지 않고[^15], 카피레프트 라이선스가 라이선스 행사에 "부가적인 제약"을 두는 것을 금하고 있기 때문이다. 하지만, 많은 오픈소스 라이선스에서 개별적 특허라이선스 요건이 그런 제약인지는 분명하지 않다.[^16] 어떤 명시적 특허 라이선스가 존재하지 않는 곳에서 특허 라이선스가 좀더 묵시적일 것 같다 - 그래서, 명시적 특허 부여를 담고 있고, 어떤 부가적인 라이선스 유보를 담고 있지 않는 오픈소스 라이선스 조차도, 어떤 부가적인 라이선스가 묵시적이지 않다는 것이 가능하다.
+
+[^15]: 일부 예외가 있다. 모질라 공중 라이선스 2.0은 2.3절에 권리 유보를 담고 있다. 또한 크리에이티브 커먼즈 제로, 공중 도메인 기증은 명시적으로 어떤 특허권도 부여책임을 거부하고 있다 (4.a절); [http://creativecommons.org/publicdomain/zero/1.0/legalcode](http://creativecommons.org/publicdomain/zero/1.0/legalcode).
+[^16]: GPL3는 10절에서 라이선스 위반이라는 점을 명확히 하고 있다.
+
+특허 라이선싱에 대한 일부 기본 원칙은 특허 라이선스에 특정 조건을 다음과 같이 어떻게 정의하냐에 달려있다:
+
+- 라이선스된 특허 정의 (*포착(capture)*)
+    - 특허 소유자
+    - (향후 포착기간을 포함할 수 있는) 포착 기간 
+    - 등재된 혹은 특별한 특허
+    - 지리적 제약
+- 라이선스된 제품 정의 (라이선스 부여 대상)    
+- 라이선스 부여에 대한 분야 혹은 영역 정의 (*범위 제약(scope limitations)*)
+
+특허 라이선싱에 대한 전반적인 논의는 이책의 범위를 넘어선다. 하지만, 몇가지 구성요소는 오픈소스 라이선스에 있어 특허권 부여를 이해하는데 매우 중요하다.
+
+전통적 특허 라이선스가 종종 특정한 특허 혹은 특허목록을 포착하지만, 오픈소스 특허권 부여는 항상 특허 소유자의 "불가피한 청구주장(necessary claims)"으로만 구성된다. 불가피한 청구주장에 대한 개념은 특허 라이선싱에서 오래된 개념으로, 특히 표준 라이선싱과 특허풀에서 그렇다. 이것은 놀라운 것이 아닌데, 왜냐하면 오픈소스 라이선스에서 특허 라이선스 목적은 소프트웨어를 보호할 일종의 "특허 공공재(patent commons)"를 생성하는 것이기 때문이다.
+
+
 
 ### 방어적 종료(Defensive Termination)
 
