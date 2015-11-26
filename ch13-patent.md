@@ -187,14 +187,17 @@ claim(s), now owned or hereafter acquired … in any patent Licensable by granto
 
 특허 라이선싱이 오픈소스 라이선스에서 어떻게 작동하는지 이해하기 위해서, 아파치 2.0의 특허조항을 살펴볼 것이다. 아파치 2.0 특허조항은 오픈소스 맥락에서 단순하고 관습적이다. 3절에서 나온 관련된 조항이 다음에 나와 있다.
 
-> Grant of Patent License. … Each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims li-
-censable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s)
-with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim
-or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+> Grant of Patent License. … Each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
 
-이 조항은 두가지 부분으로 되어 있다: 특허권 라이선스 조항과 방어적 종료 조항. 특허권 라이선스는 
+이 조항은 두가지 부분으로 되어 있다: 특허권 라이선스 조항과 방어적 종료 조항. 특허권 라이선스는 모든 기여자(즉, 기여한 저자)로부터 나오고, 기여자에 의해서 "필연적으로 침해되는" 특허를 획득하게 된다.
 
+이런 패러다임에서, 코드에 기여를 하지 않는 *단순한 재배포자(mere redistributors)*는 어떤 특허권도 부여하지 않는다. 따라서, 오픈소스 소프트웨어를 사용하고 재배포하지 않거나, 재배포하나 본인 스스로 변경한 어떤 것도 재배포하지 않는 회사는 어떤 권리를 부여하고 있는지 궁금해할 필요가 없다.
 
+GPL3에서, 특허권 범위는 더 넓다. 또한 GPL3 특허 라이선스도 기여자에 의해서 부여되더라도, GPL3는 기여된 소프트웨어(단지, 특허권 보유자 본인의 코드 기여는 아니다)에 의해 침해된 모든 특허청구도 포괄한다.
+
+오픈소스 라이선스에서 특허권 부여 목적이 기여자가 넣은 "잠수함(submarine)" 청구주장으로부터 소프트웨어를 자유롭게 하는데 있음을 기억하라. 특허권 부여는 제3자 비기여자가 제기한 청구주장의 위험을 관리할 수 없고, 관리할 의도도 없다.
+
+오픈소스 라이선스에서 특허권 부여는 좁혀져서 하류 변경사항(downstream modification)으로 연장되지 않는다. 그래서 만약 독자가 X.2 버젼에 기여하고, 이를 저자에게 전달한다면, 그리고 저자가 X.2 버젼을 생성하고 나면, 저자는 저자 본인의 어떤 기여에 대해서도 특허 라이선스 혜택을 얻지 못하게 된다. 단지 상류 라이선스 허가자만 오픈소스 라이선스에 권리를 부여한다.
 
 ### 방어적 종료(Defensive Termination)
 
