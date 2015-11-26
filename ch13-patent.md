@@ -160,9 +160,9 @@ GPL" by Adam Pugh and Laura A. Majerus을 참조한다. [http://www.fenwick.com/
 
 특허 라이선싱에 대한 일부 기본 원칙은 특허 라이선스에 특정 조건을 다음과 같이 어떻게 정의하냐에 달려있다:
 
-- 라이선스된 특허 정의 (*포착(capture)*)
+- 라이선스된 특허 정의 (*획득(capture)*)
     - 특허 소유자
-    - (향후 포착기간을 포함할 수 있는) 포착 기간 
+    - (향후 획득기간을 포함할 수 있는) 획득 기간 
     - 등재된 혹은 특별한 특허
     - 지리적 제약
 - 라이선스된 제품 정의 (라이선스 부여 대상)    
@@ -170,11 +170,29 @@ GPL" by Adam Pugh and Laura A. Majerus을 참조한다. [http://www.fenwick.com/
 
 특허 라이선싱에 대한 전반적인 논의는 이책의 범위를 넘어선다. 하지만, 몇가지 구성요소는 오픈소스 라이선스에 있어 특허권 부여를 이해하는데 매우 중요하다.
 
-전통적 특허 라이선스가 종종 특정한 특허 혹은 특허목록을 포착하지만, 오픈소스 특허권 부여는 항상 특허 소유자의 "불가피한 청구주장(necessary claims)"으로만 구성된다. 불가피한 청구주장에 대한 개념은 특허 라이선싱에서 오래된 개념으로, 특히 표준 라이선싱과 특허풀에서 그렇다. 이것은 놀라운 것이 아닌데, 왜냐하면 오픈소스 라이선스에서 특허 라이선스 목적은 소프트웨어를 보호할 일종의 "특허 공공재(patent commons)"를 생성하는 것이기 때문이다.
+전통적 특허 라이선스가 종종 특정한 특허 혹은 특허목록을 획득하지만, 오픈소스 특허권 부여는 항상 특허 소유자의 "불가피한 청구주장(necessary claims)"으로만 구성된다. 불가피한 청구주장에 대한 개념은 특허 라이선싱에서 오래된 개념으로, 특히 표준 라이선싱과 특허풀에서 그렇다. 이것은 놀라운 것이 아닌데, 왜냐하면 오픈소스 라이선스에서 특허 라이선스 목적은 소프트웨어를 보호할 일종의 "특허 공공재(patent commons)"를 생성하는 것이기 때문이다.
 
 *특허권 청구(patent claim)*는 특허가 보장하는 발명을 기술하는 특허 부분이다. *필요 청구(necessary claim)*는 특허권 청구로 이것이 없이 예를 들어, 표준을 실행하거나 소프트웨어 일부 조각을 사용하는 활동에 관여하는 것이 가능하거나 혹은 아마도 실현가능하지 못할 것이다. 다른 말로, 만약 청구항에 기술된 발명을 실행하지 않고 소프트웨어를 실현가능하게 사용하려면, 청구항이 필요한 것이 아니고, 따라서 라이선스되지 않는다. 예를 들어, 특허청구가 보라색 사용자 인터페이스를 포함하고, 소프트웨어 일부가 많은 색깔로 인터페이스를 구축할 수 있도록 한다고 가정하자. 이런 경우에, 보라색 인터페이스를 포함하는 청구항은 필요한 것은 아니다.
 
+획득하는 범위를 평가하기 위해서, 또한 누가 소유자로 고려되는지 이해해야만 된다. 예를 들어, 특허권 부여가 특정 회사와 모든 자회사와 현지법인이 소유한 특허권을 획득하거나 단지 하나의 법인만 소유한 특허를 획득할 수도 있다. 자회사를 포괄하는 획득조항(capture provision)은 특허권을 소유하는 개별회사를 설정함(종종 세금 혹은 다른 의도로 수행되는 어떤 것)으로써 라이선스 부여자의 헛점을 회피하려는 의도가 있다. 이런 법인을 흔히 IP 지주사(holding company)라고 불린다. 하지만, 오픈소스 라이선스 대부분은 하나의 법인에 대한 특허만 획득한다. 부모 회사를 포함하는 획득은 인수에서 독약이 될 수 있다 - 오픈소스 소프트웨어에 기여한 또다른 회사를 단지 매입함으로서 모든 특허에 지장을 주는 것인지 대해서 재고할 수 있다.
 
+또한, 획득이 종종 라이선스 허가자가 소유한 특허만 포함하고, 종종 해당 법인이 라이선스할 수 있는 모든 특허를 획득할 수도 있다. 예를 들어, "모질라 공중 라이선스 1.1에 있는 특허 청구"에 대한 정의는 다음과 같다: "Any patent
+claim(s), now owned or hereafter acquired … in any patent Licensable by grantor." 이 조항은 부여자가 소유한 것이 아닌 부여자가 2차 라이선스 양도할 수 있는 권리에 대한 특허권을 포함할 수 있다.
+
+오픈소스 라이선스 특허권 부여는 한 분야만 제약이 있다. 소프트웨어에 대해 부여된 저작권 라이선스의 행사와 연계된 경우에만 권리가 부여된다는 것이다. 그래서, 만약 오픈소스 프로젝트 기여자가 권리를 특허에 부여한다면, 이러한 권리는 단지 오픈소스 라이선스 아래서 소프트웨어 사용에만 연장되고, 발명의 개별적 전형에는 연장되지 못한다. 또다른 분야 제약(예를 들어, 영토, 상업 혹은 기술 분야, 혹은 상업적 vs. 비상업적 사용)은 오픈소스 정의와 충돌나고 따라서 결코 포함되지 못한다.[^17]
+
+[^17]: [http://opensource.org/osd-annotated](http://opensource.org/osd-annotated). 5, 6, 8, 10 항목 참조.
+
+오픈소스 라이선스 특허 부여에 대한 시간획득은 대체로 무한하고 미래지향적이다. 따라서, 만약 라이선스가 라이선스 허가자가 소유한 어떤 특허를 획득하면, 부여시점과 미래 시점에 특허에 지장을 주게된다. 예를 들어, 특허가 추후 기소되거나 부여자에 인수되면 그렇다. 대체로 다른 회사나 기술을 인수하려는 회사에게 이런 점이 염려된다; 인수가 종료되자마자, 특허 라이선스는 불쑥 튀어나게된다. 전통적 특허 라이선스 대부분은 이런 문제사안을 매우 상세하게 다룬다. 하지만, 오픈소스 라이선싱에서, 획득은 폭넓고 속기 방식으로 처리된다. 
+
+특허 라이선싱이 오픈소스 라이선스에서 어떻게 작동하는지 이해하기 위해서, 아파치 2.0의 특허조항을 살펴볼 것이다. 아파치 2.0 특허조항은 오픈소스 맥락에서 단순하고 관습적이다. 3절에서 나온 관련된 조항이 다음에 나와 있다.
+
+> Grant of Patent License. … Each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims li-
+censable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s)
+with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim
+or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+이 조항은 두가지 부분으로 되어 있다: 특허권 라이선스 조항과 방어적 종료 조항. 특허권 라이선스는 
 
 
 
